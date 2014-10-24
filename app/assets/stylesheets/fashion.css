@@ -1,0 +1,7 @@
+html {
+  background: url(img1.jpg) center center fixed;
+  -webkit-background-size: tile;
+  -moz-background-size: tile;
+  -o-background-size: tile;
+  background-size: tile;
+}
