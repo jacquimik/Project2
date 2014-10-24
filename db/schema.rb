@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 20141023231918) do
     t.string   "country"
     t.decimal  "total"
     t.string   "voucher"
+    t.string   "phone"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -65,6 +66,7 @@ ActiveRecord::Schema.define(version: 20141023231918) do
     t.string   "firstname"
     t.string   "lastname"
     t.string   "email"
+    t.string   "email_confirmation"
     t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"
