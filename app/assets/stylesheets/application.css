@@ -13,3 +13,174 @@
  *= require_tree .
  *= require_self
  */
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+/* START NAV MENU */
+.top-navigation nav {
+  background-color:#fff;
+  height:40px;
+}
+ 
+ 
+.top-navigation nav ul {
+  font-family: Raleway, Verdana;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ 
+.top-navigation nav ul li {
+  display: block;
+  position: relative;
+  float: left;
+ 
+}
+ 
+.top-navigation nav li ul { 
+  display: none; 
+}
+ 
+.top-navigation nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 7px 15px 3px 15px;
+  background: #fff;
+  color: #000;  
+  margin-left: 1px;
+  white-space: nowrap;
+  height:30px; /* Width and height of top-level nav items */
+  width:90px;
+  text-align:center;
+ 
+}
+ 
+.top-navigation nav ul li a:hover { 
+  background: #fff; 
+  color: #F5859D;
+}
+ 
+.top-navigation nav li:hover ul {
+  display: block;
+  position: absolute;
+  height:30px;
+}
+ 
+.top-navigation nav li:hover li {
+  float: none;
+  font-size: 11px;
+ 
+}
+ 
+.top-navigation nav li:hover a { 
+  background: #fff; 
+  height:30px; /* Height of lower-level nav items is shorter than main level */
+}
+ 
+.top-navigation nav li:hover li a:hover { 
+  background: #000; 
+}
+ 
+.top-navigation nav ul li ul li a {
+    text-align:left; /* Top-level items are centered, but nested list items are left-aligned */
+}
+ 
+/* END NAV MENU */
+
+nav li {
+	margin-right: 5px;
+}
+
+header {
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+header img {
+		width: 300px;
+		vertical-align: middle;
+		/*margin-left: -15px;*/
+		float: left;
+		margin-top: -12px;
+		margin-left: 39px;
+
+	}
+
+
+
+/*second nav bar menu */
+
+
+.second-nav-bar nav {
+  background-color:#fff;
+  height:40px;
+  margin-left: 363px;
+
+}
+ 
+ 
+.second-nav-bar nav ul {
+  font-family: Raleway, Verdana;
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ 
+.second-nav-bar nav ul li {
+  display: block;
+  position: relative;
+  float: left;
+ 
+}
+ 
+.second-nav-bar nav li ul { 
+  display: none; 
+}
+ 
+.second-nav-bar nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 7px 11px 7px 1px;
+  background: #fff;
+  color: #000;  
+  margin-left: 1px;
+  white-space: nowrap;
+  height:30px; /* Width and height of top-level nav items */
+  width:90px;
+  text-align: center;
+ 
+}
+ 
+.second-nav-bar nav ul li a:hover { 
+  background: #fff; 
+  color: #F5859D;
+}
+ 
+.second-nav-bar nav li:hover ul {
+  display: block;
+  position: absolute;
+  height:30px;
+}
+ 
+.second-nav-bar nav li:hover li {
+  float: none;
+  font-size: 11px;
+ 
+}
+ 
+.second-nav-bar nav li:hover a { 
+  background: #fff; 
+  height:30px; /* Height of lower-level nav items is shorter than main level */
+}
+ 
+.second-nav-bar nav li:hover li a:hover { 
+  background: #000; 
+}
+ 
+.second-nav-bar nav ul li ul li a {
+    text-align:left; /* Top-level items are centered, but nested list items are left-aligned */
+}
+
+
