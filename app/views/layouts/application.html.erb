@@ -7,15 +7,35 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-	<nav>
-	  <div class="container">
+	<header>
+	<div class="top-navigation">
+		<nav class="top-nav-bar">
 	    <ul>
 	      <li><%= link_to('Home', root_path) %></li>
 	      <%== intellinav %>
 	    </ul>
-	  </div>
-	</nav>
+		</nav>
+
+
+		<div class="second-nav-bar">
+			<p><a href="http://www.sydneysister.com"><img src="http://i.imgur.com/LdW3rCp.png" id="header-img"/> </a></p>
+			<nav class="nav-bar-2">
+
+				<ul>
+					<li><%= link_to "New In", about_path %></li>
+					<li><%= link_to "Dresses", about_path %></li>
+					<li><%= link_to "Tops", about_path %></li>
+					<li><%= link_to "Bottoms", about_path %></li>
+					<li><%= link_to "Playsuits", about_path %></li>
+					<li><%= link_to "Accessories", about_path %></li>
+					<li><%= link_to "Outerwear", about_path %></li>
+					<li><%= link_to "Sale", about_path %></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	</header>
+
 
 	<%= yield %>
 
