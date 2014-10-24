@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
   <title>Sydney Sister</title>
+=======
+  <title>OnlineFashion</title>
+>>>>>>> 67568a4d8bdae9cc27dee513e8205f127fa4dfce
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+<<<<<<< HEAD
 	<nav>
 	  <div class="container">
 	    <ul>
@@ -18,6 +23,32 @@
 	</nav>
 
 	<%= yield %>
+=======
+    <div class="navbar navbar-inverse navbar" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="<%= root_path %>">Fashion</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <%== intellinav %>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+>>>>>>> 67568a4d8bdae9cc27dee513e8205f127fa4dfce
 
+
+  <div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <%= yield %>
+    </div>
 </body>
 </html>
