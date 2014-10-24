@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>OnlineFashionStore</title>
+  <title>Sydney Sister</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+	<nav>
+	  <div class="container">
+	    <ul>
+	      <li><%= link_to('Home', root_path) %></li>
+	      <%== intellinav %>
+	    </ul>
+	  </div>
+	</nav>
+
+	<%= yield %>
 
 </body>
 </html>
