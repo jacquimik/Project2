@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :categories
   resources :orders
   resources :orders_products
-  resources :admin
+  #resources :admin
 
   get '/about' => 'pages#about'
   get '/faq' => 'pages#faq'
@@ -14,6 +14,10 @@ Rails.application.routes.draw do
   get '/contact' => 'pages#contact'
 
   resources :sessions, only: [:new, :create, :destroy]
+
+  namespace :admin do
+    resources :products
+  end
 
 
 end
