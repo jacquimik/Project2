@@ -26,9 +26,9 @@ module Admin
 			redirect_to admin_products_path
 		end
 
-	  def edit
-	    @product = Product.find params[:id]
-	  end
+	  	def edit
+	    	@product = Product.find params[:id]
+	  	end
 
 		def update
 			product = Product.find params[:id]

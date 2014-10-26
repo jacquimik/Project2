@@ -1,6 +1,6 @@
 User.destroy_all
 
-u1 = User.create!(:firstname => 'Angela', :lastname => 'Mikulasev,' :email => 'angela@angela.com', :password => 'chicken', :password_confirmation => 'chicken')
+u1 = User.create!(:firstname => 'Angela', :lastname => 'Mikulasev', :email => 'angela@angela.com', :password => 'chicken', :password_confirmation => 'chicken', :admin => true)
 
 p1 = Product.create!(:name => 'jacket', :price => '$29.99', :size => '10', :description => 'demin jacket', :brand => 'bordot', :image => 'http://www.bardot.com.au/files/product/images/403527/9631jb1-denim-front-.jpg')
 
