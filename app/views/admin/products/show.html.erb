@@ -1,3 +1,5 @@
+<h2><%= @product.name %></h2>
+
 <div class="show_products">
 	<h2><%= @product.name %></h2>
 		<p>
@@ -13,3 +15,10 @@
 			<%= @product.description %>
 		</p>
 </div>
+
+<%= link_to 'Edit', edit_admin_product_path(@product) %>
+<%= link_to 'Delete', [:admin, @product], :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+
+<br />
+
+<%= link_to 'Back', admin_products_path %>

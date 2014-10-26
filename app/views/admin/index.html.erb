@@ -1,17 +1,1 @@
-<h2>Products</h2>
-
-<% if @products.present? %>
-	<ul>
-		<% @products.each do |product| %>
-		  <li>
-		    <%= link_to product.name, [:admin, product] %>
-		  </li>
-		<% end %>
-	</ul>
-<% else %>
-  <p>There are no products to display.</p>
-<% end %>
-
-<br/>
-
-<%= link_to 'Add a product', new_admin_product_path %>
+<h1>hello</h1>
