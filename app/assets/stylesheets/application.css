@@ -18,7 +18,7 @@
 
 
 body {
-	height: 1000px;
+	height: 100%;
 	background: white;
 }
 
@@ -254,13 +254,14 @@ header img {
 /* FOOTER */
 
 
+
+
 footer {
   position: absolute;
-  bottom:0;
-	width: 100%;
+	bottom: 0;
+	width: 88%;
   height:300px;   /* Height of the footer */
   background: silver;
-  left: 0;
   font-family: raleway;
 }
 
