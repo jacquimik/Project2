@@ -1,0 +1,9 @@
+
+.product-image img {
+	width: 330px;
+	height: auto;
+}
+
+.product-image {
+	display: inline;
+}
