@@ -207,6 +207,7 @@ html {
 
 header img {
 		width: 50%;
+		/*height: 70px;*/
 		vertical-align: middle;
 		margin-top: -4px;
 		margin-left: 39px;
@@ -299,8 +300,4 @@ footer {
 	position: relative;
 	width: 30%;
 }
-
-
-
-
 
