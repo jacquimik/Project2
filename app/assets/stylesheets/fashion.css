@@ -5,3 +5,12 @@ html {
   -o-background-size: tile;
   background-size: tile;
 }
+
+.product-image img {
+	width: 330px;
+	height: auto;
+}
+
+.product-image {
+	display: inline;
+}

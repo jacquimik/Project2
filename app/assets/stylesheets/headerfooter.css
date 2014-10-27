@@ -1,0 +1,278 @@
+
+.navigation-bar {
+	background-color: white
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-bar {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 15px;
+  right: 15px;
+  background: black;
+  display: none;
+  
+}
+
+.clear {
+  clear: both;
+}
+
+.second-nav-bar nav ul {
+  list-style-type: none;
+  height: 80px;
+  border-bottom: 1px solid black;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.second-nav-bar nav li {
+  display: inline-block;
+  width: 12.5%;
+  float: left;
+  text-align: center;
+  line-height: 80px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+} 
+
+.second-nav-bar ul li a {
+	display: inline;
+}
+
+@media (max-width: 650px) {
+  .second-nav-bar nav, .second-nav-bar nav ul {
+    height: 40px;
+  }
+  
+  .menu-bar {
+    display: block;
+  }
+  
+  .second-nav-bar nav li {
+    display: none;
+    width: 50%;
+    line-height: 40px;
+  }
+  
+  .second-nav-bar nav li:nth-child(1) {
+    display: block;
+  }
+
+  header img {
+  	display: block;
+	}
+}
+
+@media (max-width: 600px) {
+  .menu-bar {
+    display: block;
+  }
+  
+  .second-nav-bar nav li {
+    display: none;
+    width: 100%;
+  }
+  
+  .second-nav-bar nav li:nth-child(1) {
+    display: block;
+  }
+}
+
+
+.nav-bar-2 {
+	background: white;
+	font-family: Raleway;
+	font-size: 16px;
+}
+
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+
+/* START NAV MENU */
+.top-navigation nav.top-nav-bar {
+  background-color:#fff;
+  height:40px;
+
+}
+ 
+ 
+.top-navigation nav.top-nav-bar ul {
+  font-family: Raleway, Verdana;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ 
+.top-navigation nav.top-nav-bar ul li {
+  display: block;
+  position: relative;
+  float: left;
+ 
+}
+ 
+.top-navigation nav.top-nav-bar li ul { 
+  display: none; 
+}
+ 
+.top-navigation nav.top-nav-bar ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 7px 15px 3px 15px;
+  /*background: #fff;*/
+  color: #000;  
+  margin-left: 1px;
+  white-space: nowrap;
+  height:30px;  /* Width and height of top-level nav items */
+  width:90px;
+  text-align:center;
+ 
+}
+ 
+.top-navigation nav.top-nav-bar ul li a:hover { 
+  background: #fff; 
+  color: #F5859D;
+}
+ 
+.top-navigation nav.top-nav-bar li:hover ul {
+  display: block;
+  position: absolute;
+  height:30px;
+}
+ 
+.top-navigation nav.top-nav-bar li:hover li {
+  float: none;
+  font-size: 11px;
+ 
+}
+ 
+.top-navigation nav.top-nav-bar li:hover a { 
+  background: #fff; 
+  height:30px; /* Height of lower-level nav items is shorter than main level */
+}
+ 
+.top-navigation nav.top-nav-bar li:hover li a:hover { 
+  background: #000; 
+}
+ 
+.top-navigation nav.top-nav-bar ul li ul li a {
+    text-align:left; /* Top-level items are centered, but nested list items are left-aligned */
+}
+ 
+/* END NAV MENU */
+
+html {
+	margin-right: 90px;
+	margin-left: 90px;
+}
+
+header img {
+		width: 50%;
+		/*height: 70px;*/
+		vertical-align: middle;
+		margin-top: -4px;
+		margin-left: 39px;
+		text-align: center;
+	}
+
+.second-nav-bar {
+	background-color: white;
+	text-align: center;
+}
+
+ 
+.second-nav-bar nav ul li a:hover { 
+  background: #fff; 
+  color: #98D4DC;
+}
+ 
+.second-nav-bar nav li:hover ul {
+  display: block;
+  position: absolute;
+  height:30px;
+}
+ 
+.second-nav-bar nav li:hover li {
+  float: none;
+  font-size: 11px;
+ 
+}
+ 
+.second-nav-bar nav li:hover a { 
+  background: #fff; 
+  height:30px; /* Height of lower-level nav items is shorter than main level */
+}
+ 
+.second-nav-bar nav li:hover li a:hover { 
+  background: #000; 
+}
+ 
+
+
+
+
+
+/* FOOTER */
+
+
+
+footer {
+/*  position: absolute;
+	bottom: 0;*/
+	width: 100%;
+  height:300px;  
+  background: #DCDCDC;
+  font-family: raleway;
+}
+
+.big-footer {
+	width: 100%;
+	display: inline;
+	padding-left: 50px;
+
+}
+
+.first-col-footer-links {
+	display: inline-block;
+	position: relative;
+	width: 20%;
+}
+
+.first-col-footer-links img {
+	height: 40px;
+	width: auto;
+}
+
+.second-col-footer-links {
+	display: inline-block;
+	position: relative;
+	width: 20%;
+
+}
+
+.third-col-footer-links {
+	display: inline-block;
+	position: relative;
+	width: 20%;
+}
+
+.fourth-col-footer-links {
+	display: inline-block;
+	position: relative;
+	width: 30%;
+}
