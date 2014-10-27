@@ -1,7 +1,6 @@
 class Admin::ProductsController < ApplicationController
 	before_filter :check_for_admin
 	def index
-		# render :text => 'hotdogs'
 		@products = Product.all
 	end
 
@@ -10,8 +9,8 @@ class Admin::ProductsController < ApplicationController
 	end
 
 	def create
-		product = Product.create product_params
-		redirect_to [:admin, product]
+		@product = Product.create product_params
+		redirect_to [:admin, @product]
 	end
 
 	def show
@@ -19,7 +18,7 @@ class Admin::ProductsController < ApplicationController
 	end
 
 	def destroy
-		product = Product.find params[:id]
+		@product = Product.find params[:id]
 		product.destroy
 
 		redirect_to admin_products_path
@@ -42,6 +41,6 @@ class Admin::ProductsController < ApplicationController
 	end
 
 	def product_params
-		params.require(:product).permit(:name)
+		params.require(:product).permit(:name, :description, :price, :brand, :size, :image)
 	end
 end
