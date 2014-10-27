@@ -7,42 +7,92 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<%# FACEBOOK LINK IN FOOTER - FOR SOME REASON HAS TO GO HERE ? (according to fb) %>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
 	<header>
 		<div class="navigation-bar">
-		<div class="top-navigation">
-		<nav class="top-nav-bar">
-	    <ul>
-	      <li><%= link_to('Home', root_path) %></li>
-	      <%== intellinav %>
-			</ul>
-		</nav> 
-
+			<div class="top-navigation">
+				<nav class="top-nav-bar">
+	   			<ul>
+	     			<li><%= link_to('Home', root_path) %></li>
+	     	 		<%== intellinav %>
+					</ul>
+				</nav> 
+			</div>
 
 		<div class="second-nav-bar">
 			<a href="http://www.sydneysister.com"><img src="http://i.imgur.com/yUpKyKn.png" id="header-img"/> </a>
- 			<nav class="nav-bar-2">
-				<ul>
-					<li><%= link_to "New In", about_path %></li>
-					<li><%= link_to "Dresses", about_path %></li>
-					<li><%= link_to "Tops", about_path %></li>
-					<li><%= link_to "Bottoms", about_path %></li>
-					<li><%= link_to "Playsuits", about_path %></li>
-					<li><%= link_to "Accessories", about_path %></li>
-					<li><%= link_to "Outerwear", about_path %></li>
-					<li><%= link_to "Sale", about_path %></li>
+ 				<nav class="nav-bar-2">
+					<ul>
+						<li><%= link_to "New In", about_path %></li>
+						<li><%= link_to "Dresses", about_path %></li>
+						<li><%= link_to "Tops", about_path %></li>
+						<li><%= link_to "Bottoms", about_path %></li>
+						<li><%= link_to "Playsuits", about_path %></li>
+						<li><%= link_to "Accessories", about_path %></li>
+						<li><%= link_to "Outerwear", about_path %></li>
+						<li><%= link_to "Sale", about_path %></li>
 					<div class="clear"></div>
-  			</ul>
-  			<div class="menu-bar"></div>
-			</nav>
-		</div>
-	</div> 
-</div>
+  				</ul>
+  				<div class="menu-bar"></div>
+				</nav>
+			</div>
+		</div> 
+	</div>
 	</header>
 
 
+<footer>
+	<div class="big-footer">
+		<div class="first-col-footer-links">
+			<h3>Stay Connected</h3>
+				<a href="www.twitter.com/sydneysister"><img src="http://i.imgur.com/uTsRGMO.png"/></a>
+				<a href="http://www.facebook.com"><img src="http://i.imgur.com/zbv7QNb.png"/></a>
+				<a href="http://sydneysister.tumblr.com"><img src="http://i.imgur.com/YQXooXp.png"/></a>
+				<a href="http://pinterest.com/sydneysister"><img src="http://i.imgur.com/DWhK1TO.png"/></a>
+				<a href="http://instagram.com/sydney_sister"><img src="http://i.imgur.com/RYBC1lz.png"/></a>
+		</div>
+		<div class="second-col-footer-links">
+			<h3>Customer Care</h3>
+				<li><%= link_to "Contact Us", about_path %></li>
+				<li><%= link_to "Shipping", about_path %></li>
+				<li><%= link_to "Sizing Information", about_path %></li>
+				<li><%= link_to "Returns/Exchanges", about_path %></li>
+				<li><%= link_to "Payments", about_path %></li>
+		</div>
+		<div class="third-col-footer-links">
+			<h3>About</h3>
+				<li><%= link_to "About us", about_path %></li>
+				<li><%= link_to "Blog", about_path %></li>
+				<li><%= link_to "Competitions", about_path %></li>
+		</div>
+		<div class="fourth-col-footer-links">
+			<div class="fb-like-box" data-href="https://www.facebook.com/sydneysister" data-width="350px" data-colorscheme
+			="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false">
+		</div>
+	</div>
+</footer>
 
 
 	<%= yield %>
 
 </body>
+
+
+
+
+
+
+
+
 </html>
