@@ -187,7 +187,7 @@ body {
  
 .top-navigation nav.top-nav-bar li:hover a { 
   background: #fff; 
-  height:30px;*/ /* Height of lower-level nav items is shorter than main level */
+  height:30px; /* Height of lower-level nav items is shorter than main level */
 }
  
 .top-navigation nav.top-nav-bar li:hover li a:hover { 
@@ -210,7 +210,7 @@ header img {
 		/*width: 800px;*/
 		width: 50%;
 		/*height: 70px;*/
-		vertical-align: middle;*/
+		vertical-align: middle;
 		/*margin-left: -15px; */
 		float: left;
 		margin-top: -4px;
