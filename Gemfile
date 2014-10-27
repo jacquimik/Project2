@@ -26,6 +26,7 @@ gem 'spring',        group: :development
 
 gem 'bcrypt'
 gem 'bootstrap-sass'
+gem 'rails_12factor', group: :production
 
 group :development do
   gem 'pry-rails'
