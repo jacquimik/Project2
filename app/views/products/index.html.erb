@@ -1,7 +1,9 @@
 <div class="products-index">
 	<h2>All Products</h2>
-		<% @products.each do |product| %>	
-	 		<img src="<%= product.image %>">
+		<% @products.each do |product| %>
+			<div class="img">
+	 			<img src="<%= product.image %>">
+	 		</div>	
 	 			<div class="link">
 	 				<%= link_to product.name %>
 	 			</div>
