@@ -123,14 +123,10 @@ body {
 
 
 
-
-@import url(http://fonts.googleapis.com/css?family=Raleway);
-
-
 /* START NAV MENU */
 .top-navigation nav.top-nav-bar {
-  background-color:#fff;
-  height:40px;
+  background-color: #fff;
+  height: 40px;
 
 }
  
@@ -158,7 +154,6 @@ body {
   display: block;
   text-decoration: none;
   padding: 7px 15px 3px 15px;
-  /*background: #fff;*/
   color: #000;  
   margin-left: 1px;
   white-space: nowrap;
@@ -187,7 +182,7 @@ body {
  
 .top-navigation nav.top-nav-bar li:hover a { 
   background: #fff; 
-  height:30px;*/ /* Height of lower-level nav items is shorter than main level */
+  height:30px; /* Height of lower-level nav items is shorter than main level */
 }
  
 .top-navigation nav.top-nav-bar li:hover li a:hover { 
@@ -207,11 +202,8 @@ html {
 }
 
 header img {
-		/*width: 800px;*/
 		width: 50%;
-		/*height: 70px;*/
-		vertical-align: middle;*/
-		/*margin-left: -15px; */
+		vertical-align: middle;
 		float: left;
 		margin-top: -4px;
 		margin-left: 39px;
@@ -261,9 +253,9 @@ header img {
 
 footer {
   position: absolute;
-  bottom:0;
+  bottom: 0;
 	width: 100%;
-  height:200px;   /* Height of the footer */
+  height: 300px;   /* Height of the footer */
   background: silver;
   left: 0;
   font-family: raleway;
@@ -279,7 +271,7 @@ footer {
 .first-col-footer-links {
 	display: inline-block;
 	position: relative;
-	width: 25%;
+	width: 20%;
 }
 
 .first-col-footer-links img {
@@ -290,23 +282,18 @@ footer {
 .second-col-footer-links {
 	display: inline-block;
 	position: relative;
-	width: 25%;
+	width: 20%;
 
 }
 
 .third-col-footer-links {
 	display: inline-block;
 	position: relative;
-	width: 25%;
+	width: 20%;
 }
 
 .fourth-col-footer-links {
 	display: inline-block;
 	position: relative;
-	width: 25%;
+	width: 30%;
 }
-
-
-
-
-
