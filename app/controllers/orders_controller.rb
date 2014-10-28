@@ -16,5 +16,6 @@ class OrdersController < ApplicationController
 			redirect_to checkout_path session[:order_id]
 		else
 			redirect_to login_path
+		end
 	end
 end
