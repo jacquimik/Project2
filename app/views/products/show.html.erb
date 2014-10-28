@@ -1,20 +1,4 @@
-# add/remove cart
-
-<h2>My Cart</h2>
-<p class="cart-selection"> You've selected <span class="cart-count"><%= @current_user.cart_count %></span> products.</p>
- 
-  <% @cart_products.each do |product| %>
-      <%= link_to product do %>
-        <%= image_tag @product.image %>
-      <% end %>
-	 <%= @product.name %>
-      <%=link_to "" , data: {targetUrl: remove_from_cart_path(product)} do %>
-        <i class="fi-x right"></i>
-      <% end %>
-      <h3 class="scale">$ <%= @product.price %></h3>
-  <% end %>
-
-# show product info
+<!-- show product info -->
 
 <div class="showproducts">
 <!-- <h2><%#= @product.name %></h2> -->
@@ -29,7 +13,7 @@
 </div>
 
 
-# tab widget
+<!-- tab widget -->
  
 <div id="tabs">
   <ul>

@@ -1,13 +1,21 @@
+<table id="cart">
+  <tr>
+    <th>Product</th>
+    <th>Qty</th>
+    <th class="price">Price</th>
+  </tr>
 
- 
-  <% @cart_products.each do |product| %>
-      <%= link_to product do %>
-        <%= image_tag @product.image %>
-      <% end %>
-	 <%= @product.name %>
-      <%=link_to "" , data: {targetUrl: remove_from_cart_path(product)} do %>
-        <i class="fi-x right"></i>
-      <% end %>
-      <h3 class="scale">$ <%= @product.price %></h3>
-  <% end %>
+  <% @cart.products.each do |product| %>
+    <tr class="product">
+      <td><%= product.name %></td>
+      <td class="qty"><%= product.quantity %></td>
+      <td class="price"><%= product.price %></td>
+    </tr>
+   <% end %>
 
+  <tr>
+    <td class="total price" colspan="3">
+      Total: <%= @cart.total_price %>
+    </td>
+  </tr>
+</table>

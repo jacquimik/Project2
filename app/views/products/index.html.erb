@@ -1,11 +1,21 @@
 <div class="products-index">
 	<h2>All Products</h2>
-		<% @products.each do |product| %>
-			<div class="product-image">
-	 			<img src="<%= product.image %>">
-	 		</div>	
-	 			<div class="link">
-	 				<%= link_to product.name %>
-	 			</div>
-		<% end %>
+    <ul>
+      <li>
+    		<% @products.each do |product| %>
+    			<div class="product-image">
+    	 			<img src="<%= product.image %>">
+    	 		</div>
+          <div>
+            <%= form_for(CartProduct.new(product_id: product.id)) do |f| %>
+              <%= f.hidden_field :product_id %>
+              <%= f.submit 'Add to cart' %>
+            <% end %>
+          </div>
+     			<div class="link">
+     				<%= link_to product.name %>
+     			</div>
+        <% end %>
+      </li>
+    </ul>
 </div>

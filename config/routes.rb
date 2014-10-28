@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   resources :categories
   resources :orders
   resources :orders_products
+  resource :cart, only: [:show, :edit, :update]
+
+  resources :cart_products, only: [:create]
 
   get '/about' => 'pages#about'
   get '/faq' => 'pages#faq'

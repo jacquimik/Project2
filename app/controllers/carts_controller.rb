@@ -1,28 +1,21 @@
 class CartsController < ApplicationController
- 
+  before_action :get_cart
+
   def show
- 
+
   end
  
-  def add
-    
-  end
- 
-  def remove
-    
+  def edit
+
   end
 
-  def cart_count
-    
-  end
+  def update
 
-  def cart_action(current_user_id)
-	  
   end
  
   private
  
-  def current_user_cart
-   
+  def get_cart
+  	@cart = current_user.cart
   end
 end
