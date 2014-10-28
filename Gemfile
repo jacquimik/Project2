@@ -29,12 +29,13 @@ gem 'bootstrap-sass'
 gem 'hiredis', '~> 0.4.5'
 gem 'rails_12factor', group: :production
 gem 'mail'
-gem 'dotenv-rails'
+
 
 group :development do
   gem 'pry-rails'
   gem 'pry-debugger'
   gem 'pry-stack_explorer'
+  gem 'dotenv-rails'
 
   gem 'annotate'
 
