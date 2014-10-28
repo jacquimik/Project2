@@ -104,3 +104,5 @@ production:
   database: online_fashion_store_production
   username: online_fashion_store
   password: <%= ENV['ONLINE_FASHION_STORE_DATABASE_PASSWORD'] %>
+
+.env
