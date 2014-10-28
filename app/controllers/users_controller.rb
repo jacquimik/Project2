@@ -5,15 +5,36 @@ class UsersController < ApplicationController
 	end
 
 	def create
-		@user = User.new user_params
-		if 
-		  @user.save
-		  session[:user_id] = @user.id
-		  redirect_to root_path
-		else
-		  render :new
-		end
-	end
+	    @user = User.new(params[:user])
+	 
+	    respond_to do |format|
+	      if @user.save
+	        # Tell the UserMailer to send a welcome email after save
+	        UserMailer.welcome_email(@user).deliver
+	 
+	        format.html { redirect_to(@user, notice: 'User was successfully created.') }
+	        format.json { render json: @user, status: :created, location: @user }
+	        # create login session
+	        session[:user_id] = @user.id
+		    redirect_to root_path
+	      else
+	        format.html { render action: 'new' }
+	        format.json { render json: @user.errors, status: :unprocessable_entity }
+	      	render :new
+	      end
+	    end
+	  end
+
+	# def create
+	# 	@user = User.new user_params
+	# 	if 
+	# 	  @user.save
+	# 	  session[:user_id] = @user.id
+	# 	  redirect_to root_path
+	# 	else
+	# 	  render :new
+	# 	end
+	# end
 
 	def edit
 		@user = @current_user

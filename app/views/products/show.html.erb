@@ -1,32 +1,35 @@
-<div class="showproducts">
-	<h2><%= @product.name %></h2>
-		<div class="product-image">
-			<img src="<%= @product.image %>">
-		</div>	
+# add/remove cart
 
-		<p>
-			<%= @product.description %>
-		</p>
+<h2>My Cart</h2>
+<p class="cart-selection"> You've selected <span class="cart-count"><%= @current_user.cart_count %></span> products.</p>
+ 
+  <% @cart_products.each do |product| %>
+      <%= link_to product do %>
+        <%= image_tag @product.image %>
+      <% end %>
+	 <%= @product.name %>
+      <%=link_to "" , data: {targetUrl: remove_from_cart_path(product)} do %>
+        <i class="fi-x right"></i>
+      <% end %>
+      <h3 class="scale">$ <%= @product.price %></h3>
+  <% end %>
+
+# show product info
+
+<div class="showproducts">
+<!-- <h2><%#= @product.name %></h2> -->
+	<div class="product-image">
+		<img src="<%= @product.image %>">
+	</div>
+</div>	
+
+<div class="product_name">
+		<%= @product.name %>
+	</div>
 </div>
 
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>jQuery UI Tabs - Open on mouseover</title>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script>
-  $(function() {
-    $( "#tabs" ).tabs({
-      event: "mouseover"
-    });
-  });
-  </script>
-</head>
-<body>
+
+# tab widget
  
 <div id="tabs">
   <ul>
@@ -44,7 +47,7 @@
     <p>This will be about shipping anad payment.</p>
   </div>
 </div>
- 
+<div class="clear"></div>
  
 </body>
 </html>
