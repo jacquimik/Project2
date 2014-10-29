@@ -5,8 +5,8 @@ require File.expand_path('../application', __FILE__)
 Rails.application.initialize!
 
 # Configuration for using SendGrid on Heroku
-config.action_mailer.delivery_method = :smtp
-config.action_mailer.smtp_settings = {
+ActionMailer::Base.delivery_method = :smtp
+ActionMailer::Base.smtp_settings = {
   address:              'smtp.sendgrid.com',
   port:                 587,
   domain:               'heroku.com' ,
