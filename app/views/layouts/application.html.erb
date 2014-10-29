@@ -1,4 +1,4 @@
-products<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -22,10 +22,10 @@ products<!DOCTYPE html>
 		  			<li><%= link_to 'Blog', blog_path %></li>
 		  			<li><%= link_to 'Contact', contact_path %></li>
 		  			<li><%= link_to 'Edit profile', edit_user_path(@current_user) %></li>
+		  			<li><%= link_to 'Cart', cart_path(@current_user) %></li>
 		  			<li><%= link_to "Sign out #{@current_user.firstname}", new_session_path, method: :delete, data: { confirm: 'Are you sure?'} %></li>
-		  			<% if @admin.present? %>
-		  				<li><%= link_to 'Add category', new_category_path %></li>
-		  				<li><%= link_to 'Add product', new_product_path %></li>
+		  		<% if @current_user.admin %>
+		  				<li><%= link_to 'Add product', new_admin_product_path %></li>
 		  			<% end %>
 			  	<% else %>
 			  		<li><%= link_to 'Home', root_path %></li>
@@ -134,17 +134,17 @@ products<!DOCTYPE html>
 		</div>
 		<div class="column small-12 medium-6 large-3">
 			<h3>Customer Care</h3>
-				<li><%= link_to "Contact Us", about_path %></li>
-				<li><%= link_to "Shipping", about_path %></li>
-				<li><%= link_to "Sizing Information", about_path %></li>
-				<li><%= link_to "Returns/Exchanges", about_path %></li>
-				<li><%= link_to "Payments", about_path %></li>
+				<li><%= link_to "Contact Us", contact_path %></li>
+				<li><%= link_to "Shipping", shipping_path %></li>
+				<li><%= link_to "Sizing Information", sizing_path %></li>
+				<li><%= link_to "Returns/Exchanges", returns_path %></li>
+				<li><%= link_to "Payments", paymentinfo_path %></li>
 		</div>
 		<div class="column small-12 medium-6 large-3">
 			<h3>About</h3>
 				<li><%= link_to "About us", about_path %></li>
-				<li><%= link_to "Blog", about_path %></li>
-				<li><%= link_to "Competitions", about_path %></li>
+				<li><%= link_to "Blog", blog_path %></li>
+				<li><%= link_to "Competitions", competitions_path %></li>
 		</div>
 		<div class="column small-12 medium-6 large-3">
 			<div class="fb-like-box" data-href="https://www.facebook.com/sydneysister" data-width="350px" data-colorscheme

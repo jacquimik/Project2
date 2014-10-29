@@ -16,6 +16,12 @@ Rails.application.routes.draw do
   get '/faq' => 'pages#faq'
   get '/blog' => 'pages#blog'
   get '/contact' => 'pages#contact'
+  get '/shipping' => 'pages#shipping'
+  get '/sizing' => 'pages#shipping'
+  get '/returns' => 'pages#shipping'
+  get '/paymentinfo' => 'pages#paymentinfo'
+  get '/competitions' => 'pages#competitions'
+
 
   resources :sessions, only: [:new, :create, :destroy]
 
