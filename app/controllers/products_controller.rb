@@ -3,18 +3,16 @@ class ProductsController < ApplicationController
 
 	def index
 
-		# if params[:category].present?
-		# 	# category = Category.where(name: params[:category]).first
-		# 	# category_products = CategoryProduct.where(category_id: category.id)
-  # 		# @products = Product.where()
-		# else
- 	# 		@products = Product.all
-		# end
+		@products = if params[:category].present?
+			category = Category.where(name: params[:category]).first
 
-		@cart = current_user.cart
+ 			Product.where(category_id: category.id)
+		else
+ 			Product.all
+		end
 
-		@products = Product.all
 
+		# @cart = current_user.cart
 	end
 
 	def show
@@ -27,6 +25,3 @@ class ProductsController < ApplicationController
 		params.require(:product).permit(:name, :description, :price, :brand, :size, :image)
 	end
 end
-
-# routes
-# Ω

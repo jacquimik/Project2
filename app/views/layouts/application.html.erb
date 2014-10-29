@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+products<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,25 +12,103 @@
 
   <body class="sydney-sisters">
   	<div class="container">
-			<%== intellinav %>
-			<div class="clear"></div>
+
+		 	<header>
+		 		<ul class="inline-list">
+			  	<% if @current_user.present? %>
+		  			<li><%= link_to 'Home', root_path %></li>
+		  			<li><%= link_to 'Shop', products_path %></li>
+		  			<li><%= link_to 'FAQ', faq_path %></li>
+		  			<li><%= link_to 'Blog', blog_path %></li>
+		  			<li><%= link_to 'Contact', contact_path %></li>
+		  			<li><%= link_to 'Edit profile', edit_user_path(@current_user) %></li>
+		  			<li><%= link_to "Sign out #{@current_user.firstname}", new_session_path, method: :delete, data: { confirm: 'Are you sure?'} %></li>
+		  			<% if @admin.present? %>
+		  				<li><%= link_to 'Add category', new_category_path %></li>
+		  				<li><%= link_to 'Add product', new_product_path %></li>
+		  			<% end %>
+			  	<% else %>
+			  		<li><%= link_to 'Home', root_path %></li>
+						<li><%= link_to 'Sign up', new_user_path %></li>
+						<li><%= link_to 'Login', new_session_path %></li>
+						<li><%= link_to 'Shop', products_path %></li>
+						<li><%= link_to 'About', about_path %></li>
+						<li><%= link_to 'FAQ', faq_path %></li>
+						<li><%= link_to 'Blog', blog_path %></li>
+						<li><%= link_to 'Contact', contact_path %></li>
+			  	<% end %>
+		  	</ul>
+		  	<a class="header-image" href="<%= root_url %>">
+		  		<img id="header-img" class="sydney-sisters-header" src="http://i.imgur.com/yUpKyKn.png" />
+		  	</a>
+
+
+				<ul>
+					<% Category.all.each do |category| %>
+		  			<li><%= link_to category.name, products_path(category: category.name) %></li>
+					<% end %>
+				</ul>
+
+
+		  	<nav class="top-bar" data-topbar role="navigation">
+		  		<section class="top-bar-section">
+		  			<ul class="left">
+		  				<li><%= link_to "New In", products_path %></li>
+		  					<li class="has-dropdown"><%= link_to "Dresses", products_path %></li>
+									<ul class="dropdown">
+										<li><%= link_to "Party Dresses", products_path %></li>
+										<li><%= link_to "Maxi Dresses", products_path %></li>
+										<li><%= link_to "Casual Dresses", products_path %></li>
+									</ul>
+								</li>
+							<li class="has-dropdown"><%= link_to "Tops", products_path %></li>
+								<ul class="dropdown">
+									<li><%= link_to "Party Tops", products_path %></li>
+									<li><%= link_to "Casual Tops", products_path %></li>
+									<li><%= link_to "T-Shirts", products_path %></li>
+									<li><%= link_to "Long Sleeved", products_path %></li>
+									<li><%= link_to "Crop Tops", products_path %></li>
+								</ul>
+							</li>
+							<li class="has-dropdown"><%= link_to "Bottoms", products_path %></li>
+								<ul class="dropdown">
+									<li><%= link_to "Jeans", products_path() %></li>
+									<li><%= link_to "Shorts", products_path %></li>
+									<li><%= link_to "Skirts", products_path %></li>
+									<li><%= link_to "Pants", products_path %></li>
+								</ul>
+							</li>
+							<li><%= link_to "Playsuits", products_path %></li>
+							<li class="has-dropdown"><%= link_to "Accessories", products_path %></li>
+								<ul class="dropdown">
+									<li><%= link_to "Bags", products_path %></li>
+									<li><%= link_to "Jewellery", products_path %></li>
+									<li><%= link_to "Shoes", products_path %></li>
+								</ul>
+							</li>
+							<li class="has-dropdown"><%= link_to "Outerwear", products_path %></li>
+								<ul class="dropdown">
+									<li><%= link_to "Jackets", products_path %></li>
+									<li><%= link_to "Coats", products_path %></li>
+									<li><%= link_to "Kimonos", products_path %></li>
+									<li><%= link_to "Knitwear", products_path %></li>
+								</ul>
+							</li>
+							<li><%= link_to "Sale", products_path %></li>
+						</ul>
+					</section>
+				</nav>
+		  </header>
+
+<div class="clear"></div>
 
 
 
-	    <%= yield %>
 
-]
-<html>
-<head>
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
-  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-  <title>Sydney Sister</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+
+<%= yield %> 
+
+
 
 <%# FACEBOOK LINK IN FOOTER - FOR SOME REASON HAS TO GO HERE ? (according to fb) %>
 <div id="fb-root"></div>
@@ -42,7 +120,7 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-
+</script>
 
 <footer>
 	<div class="row">
@@ -76,12 +154,9 @@
 	</div>
 </footer>
 
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
-	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-	<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 
 	  </div>
-    <%= javascript_include_tag "application" %>
+<%= javascript_include_tag "application" %> 
   </body>
 </html>
 
