@@ -1,4 +1,25 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	  <title>Sydney Sister</title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+  </head>
+
+  <body class="sydney-sisters">
+  	<div class="container">
+			<%== intellinav %>
+			<div class="clear"></div>
+
+
+
+	    <%= yield %>
+
+]
 <html>
 <head>
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
@@ -20,7 +41,6 @@
   js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-
 
 	<header>
 		<div class="navigation-bar">
@@ -60,9 +80,10 @@
 	<%= yield %>
 
 
+
 <footer>
-	<div class="big-footer">
-		<div class="first-col-footer-links">
+	<div class="row">
+		<div class="column small-12 medium-6 large-3">
 			<h3>Stay Connected</h3>
 				<a href="https://twitter.com/sydney_sister"><img src="http://i.imgur.com/uTsRGMO.png"/></a>
 				<a href="http://www.facebook.com/sydneysister"><img src="http://i.imgur.com/zbv7QNb.png"/></a>
@@ -70,7 +91,7 @@
 				<a href="http://pinterest.com/sydneysister"><img src="http://i.imgur.com/DWhK1TO.png"/></a>
 				<a href="http://instagram.com/sydney_sister"><img src="http://i.imgur.com/RYBC1lz.png"/></a>
 		</div>
-		<div class="second-col-footer-links">
+		<div class="column small-12 medium-6 large-3">
 			<h3>Customer Care</h3>
 				<li><%= link_to "Contact Us", about_path %></li>
 				<li><%= link_to "Shipping", about_path %></li>
@@ -78,20 +99,22 @@
 				<li><%= link_to "Returns/Exchanges", about_path %></li>
 				<li><%= link_to "Payments", about_path %></li>
 		</div>
-		<div class="third-col-footer-links">
+		<div class="column small-12 medium-6 large-3">
 			<h3>About</h3>
 				<li><%= link_to "About us", about_path %></li>
 				<li><%= link_to "Blog", about_path %></li>
 				<li><%= link_to "Competitions", about_path %></li>
 		</div>
-		<div class="fourth-col-footer-links">
+		<div class="column small-12 medium-6 large-3">
 			<div class="fb-like-box" data-href="https://www.facebook.com/sydneysister" data-width="350px" data-colorscheme
 			="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false">
 		</div>
+		<div class="clear"></div>
 	</div>
 </footer>
 
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<!-- DO NOT DELETE THIS JACQUI YA FEG -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
 	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 
@@ -99,4 +122,12 @@
 
 
 </body>
+
+	  </div>
+    <%= javascript_include_tag "application" %>
+  </body>
 </html>
+
+
+
+

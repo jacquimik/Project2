@@ -3,7 +3,18 @@ class ProductsController < ApplicationController
 	before_action :setup_cart
 
 	def index
+		# if params[:category].present?
+		# 	# category = Category.where(name: params[:category]).first
+		# 	# category_products = CategoryProduct.where(category_id: category.id)
+  # 		# @products = Product.where()
+		# else
+ 	# 		@products = Product.all
+		# end
+
+		@cart = current_user.cart
+
 		@products = Product.all
+
 	end
 
 	def show
@@ -27,4 +38,5 @@ class ProductsController < ApplicationController
 			session[:cart_id] = @cart.id
 		end
 	end
+end
 end

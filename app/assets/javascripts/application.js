@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require foundation
 //= require_tree .
 
 //THIS IS RESPONSIVE NAV BAR //
@@ -46,3 +47,4 @@ $(document).ready(function () {
   });
   
 });
+$(function(){ $(document).foundation(); });

@@ -1,0 +1,5 @@
+<h2><%= @category.name %></h2>
+
+<%= link_to 'Edit', edit_admin_category_path(@product) %>
+<%= link_to 'Delete', @product, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+

@@ -1,9 +1,17 @@
-html {
+body.sydney-sisters {
   background: url(img1.jpg) center center fixed;
   -webkit-background-size: tile;
   -moz-background-size: tile;
   -o-background-size: tile;
   background-size: tile;
+}
+
+.block {
+	display: block;
+}
+
+.clear {
+  clear: both;
 }
 
 .ui-widget {
@@ -32,6 +40,16 @@ a#ui-id-3.ui-tabs-anchor {
 }
 
 div#tabs.ui-tabs.ui-widget.ui-widget-content.ui-corner-all {
+
+	margin: 0px;
+}
+
+div.container {
+	width: 80%;
+	margin: 0 auto;
+	background: white;
+}
+
 	/*margin-top: 110px;*/
 }
 
@@ -70,6 +88,7 @@ div#slides {
 	width: 600px; 
 	height: 300px;
 }
+
 
 p.size_guide_head {
 	font-size: 16px;
@@ -135,3 +154,4 @@ h3 {
 h4 {
 	font-family: Raleway;
 }
+

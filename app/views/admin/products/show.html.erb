@@ -10,6 +10,10 @@
 		<p>Description: <%= @product.description %></p>
 </div>
 
+
+
+
+
 <%= link_to 'Edit', edit_admin_product_path(@product) %>
 <%= link_to 'Delete', [:admin, @product], :method => :delete, :data => { :confirm => 'Are you sure?' } %>
 

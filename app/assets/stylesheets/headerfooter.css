@@ -1,6 +1,103 @@
+/*TO MAKE THEM EQUAL WIDTH*/
+  /*ul.left a width of 100%*/
+    /*all lis within that a width of 12.5%*/
+
+/*FOR STYLING STUFF*/
+  /*.top-bar needs to have a background change*/
+  /*.top-bar-section ul li needs a background change*/
+  /*.top-bar-section ul li:hover:not(.has-form) > a   needs a background change*/
+  /*.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button)   needs a background change*/
+  /*.top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) needs a background change*/
+
+.top-bar {
+  background-color: pink;
+}
+
+.top-bar-section ul li {
+  background-color: pink;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background-color: pink;
+}
+
+
+.top-bar-section ul li:hover:not(.has-form) > a {
+  background-color: pink;
+}
+
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+  background-color: pink;
+}
+
+.top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
+  background-color: pink;
+}
+
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background-color: pink;
+}
+
+.left ul {
+  width: 100%;
+}
+
+.left ul li {
+  width: 12.5%;
+}
+
+.top-bar-section ul {
+  width: 100%;
+}
+
+.top-bar ul li {
+  width: 12.5%;
+  text-align: center;
+}
+
+nav {
+ width: 100%;
+}
+
+nav ul.inline-list {
+}
+
+nav ul.inline-list li {
+}
+
+a.header-image {
+  display: block;
+  width: 55%;
+  margin: 0 auto;
+}
+
+a.header-image img.sydney-sisters-header {
+  padding: 20px;
+}
+
+
+.left {
+  width: 100%;
+}
+
+.top-bar ul li {
+    float:left;
+}
+
+
+.top-bar {
+    width:100%;
+    margin:0 auto;
+}
 
 .navigation-bar {
 	background-color: white
+}
+
+
+nav.top-bar {
+  width: 100%;
 }
 
 * {
@@ -23,7 +120,7 @@
   clear: both;
 }
 
-.second-nav-bar nav ul {
+/*.second-nav-bar nav ul {
   list-style-type: none;
   height: 80px;
   border-bottom: 1px solid black;
@@ -100,14 +197,12 @@
 
 
 
-@import url(http://fonts.googleapis.com/css?family=Raleway);
 
 
-/* START NAV MENU */
-.top-navigation nav.top-nav-bar {
+/* START NAV MENU 
+/*.top-navigation nav.top-nav-bar {
   background-color:#fff;
   height:40px;
-
 }
  
  
@@ -134,11 +229,10 @@
   display: block;
   text-decoration: none;
   padding: 7px 15px 3px 15px;
-  /*background: #fff;*/
   color: #000;  
   margin-left: 1px;
   white-space: nowrap;
-  height:30px;  /* Width and height of top-level nav items */
+  height:30px; 
   width:90px;
   text-align:center;
  
@@ -163,7 +257,7 @@
  
 .top-navigation nav.top-nav-bar li:hover a { 
   background: #fff; 
-  height:30px; /* Height of lower-level nav items is shorter than main level */
+  height:30px; 
 }
  
 .top-navigation nav.top-nav-bar li:hover li a:hover { 
@@ -171,20 +265,20 @@
 }
  
 .top-navigation nav.top-nav-bar ul li ul li a {
-    text-align:left; /* Top-level items are centered, but nested list items are left-aligned */
+    text-align:left; 
 }
  
 /* END NAV MENU */
 
-html {
+/*html {
 	margin-right: 90px;
 	margin-left: 90px;
 }
 
 header img {
-		width: 50%;
+		width: 50%;*/
 		/*height: 70px;*/
-		vertical-align: middle;
+/*		vertical-align: middle;
 		margin-top: -4px;
 		margin-left: 39px;
 		text-align: center;
@@ -201,39 +295,61 @@ header img {
   color: #98D4DC;
 }
  
-.second-nav-bar nav li:hover ul {
+/*.second-nav-bar nav li:hover ul {
   display: block;
   position: absolute;
   height:30px;
-}
+}*/
  
-.second-nav-bar nav li:hover li {
+/*.second-nav-bar nav li:hover li {
   float: none;
   font-size: 11px;
  
-}
+}*/
  
-.second-nav-bar nav li:hover a { 
+/*.second-nav-bar nav li:hover a { 
   background: #fff; 
-  height:30px; /* Height of lower-level nav items is shorter than main level */
-}
+  height:30px; 
+}*/
  
-.second-nav-bar nav li:hover li a:hover { 
+/*.second-nav-bar nav li:hover li a:hover { 
   background: #000; 
 }
- 
 
 
+ */
+/* DROP DOWN MENU */
 
-
+/*.second-nav-bar nav ul ul {
+  background: black; 
+  position: absolute; 
+  top: 100%;
+}
+.second-nav-bar nav ul ul li {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+.second-nav-bar nav ul ul li a {
+  padding: 15px 40px;
+  color: #fff;
+} 
+.second-nav-bar nav ul ul li a:hover {
+  background: black;
+}
+*/
 
 /* FOOTER */
 
+.row {
+  text-align: center;
+}
 
+.row img {
+  width: 40px;
+}
 
 footer {
-/*  position: absolute;
-	bottom: 0;*/
 	width: 100%;
   height:300px;  
   background: #DCDCDC;
@@ -243,25 +359,31 @@ footer {
 .big-footer {
 	width: 100%;
 	display: inline;
-	padding-left: 50px;
+	padding-left: 80px;
+  padding-top: 25px;
+}
 
+
+footer div {
+  float: left;
 }
 
 .first-col-footer-links {
 	display: inline-block;
 	position: relative;
-	width: 20%;
+	width: 23%;
 }
 
 .first-col-footer-links img {
 	height: 40px;
 	width: auto;
+
 }
 
 .second-col-footer-links {
 	display: inline-block;
 	position: relative;
-	width: 20%;
+	width: 22%;
 
 }
 
@@ -274,5 +396,5 @@ footer {
 .fourth-col-footer-links {
 	display: inline-block;
 	position: relative;
-	width: 30%;
+	width: 14%;
 }

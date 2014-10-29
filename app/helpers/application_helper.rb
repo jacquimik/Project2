@@ -19,9 +19,6 @@ module ApplicationHelper
       	  nav += "<li>#{ link_to('About', about_path) }</li>"
       	  nav += "<li>#{ link_to('FAQ', faq_path) }</li>"
       	  nav += "<li>#{ link_to('Blog', blog_path) }</li>"
-	  	  nav += "<li>#{ link_to('Contact', contact_path) }</li>"
-		end
-	nav
+	  	  nav += "<li>#{ link_to('Contact', contact_path) }</li>
 
-	end
 end

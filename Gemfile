@@ -32,6 +32,8 @@ gem 'mail'
 gem 'stripe'
 
 
+gem 'foundation-rails'
+
 group :development do
   gem 'pry-rails'
   gem 'pry-debugger'
