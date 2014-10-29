@@ -28,6 +28,8 @@ gem 'bcrypt'
 gem 'bootstrap-sass'
 gem 'rails_12factor', group: :production
 
+gem 'foundation-rails'
+
 group :development do
   gem 'pry-rails'
   gem 'pry-debugger'

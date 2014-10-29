@@ -1,9 +1,17 @@
-html {
+body.sydney-sisters {
   background: url(img1.jpg) center center fixed;
   -webkit-background-size: tile;
   -moz-background-size: tile;
   -o-background-size: tile;
   background-size: tile;
+}
+
+.block {
+	display: block;
+}
+
+.clear {
+  clear: both;
 }
 
 .ui-widget {
@@ -22,4 +30,10 @@ html {
 
 div#tabs.ui-tabs.ui-widget.ui-widget-content.ui-corner-all {
 	margin: 0px;
+}
+
+div.container {
+	width: 80%;
+	margin: 0 auto;
+	background: white;
 }

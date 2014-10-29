@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Sydney Sister</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	  <title>Sydney Sister</title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+  </head>
+
+  <body class="sydney-sisters">
+  	<div class="container">
+			<%== intellinav %>
+			<div class="clear"></div>
+
+
+
+	    <%= yield %>
+
+
 
 <%# FACEBOOK LINK IN FOOTER - FOR SOME REASON HAS TO GO HERE ? (according to fb) %>
 <div id="fb-root"></div>
@@ -19,45 +32,12 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-	<header>
-		<div class="navigation-bar">
-			<div class="top-navigation">
-				<nav class="top-nav-bar">
-	   			<ul>
-	     			<li><%= link_to('Home', root_path) %></li>
-	     	 		<%== intellinav %>
-					</ul>
-				</nav> 
-			</div>
 
-		<div class="second-nav-bar">
-			<a href="http://www.sydneysister.com"><img src="http://i.imgur.com/yUpKyKn.png" id="header-img"/> </a>
- 				<nav class="nav-bar-2">
-					<ul>
-						<li><%= link_to "New In", about_path %></li>
-						<li><%= link_to "Dresses", about_path %></li>
-						<li><%= link_to "Tops", about_path %></li>
-						<li><%= link_to "Bottoms", about_path %></li>
-						<li><%= link_to "Playsuits", about_path %></li>
-						<li><%= link_to "Accessories", about_path %></li>
-						<li><%= link_to "Outerwear", about_path %></li>
-						<li><%= link_to "Sale", about_path %></li>
-					<div class="clear"></div>
-  				</ul>
-  				<div class="menu-bar"></div>
-				</nav>
-			</div>
-		</div> 
-	</div>
-	</header>
-
-
-	<%= yield %>
-
+<div class="small-2 large-4 columns">...</div>
 
 <footer>
-	<div class="big-footer">
-		<div class="first-col-footer-links">
+	<div class="row">
+		<div class="column small-12 medium-6 large-3">
 			<h3>Stay Connected</h3>
 				<a href="https://twitter.com/sydney_sister"><img src="http://i.imgur.com/uTsRGMO.png"/></a>
 				<a href="http://www.facebook.com/sydneysister"><img src="http://i.imgur.com/zbv7QNb.png"/></a>
@@ -65,7 +45,7 @@
 				<a href="http://pinterest.com/sydneysister"><img src="http://i.imgur.com/DWhK1TO.png"/></a>
 				<a href="http://instagram.com/sydney_sister"><img src="http://i.imgur.com/RYBC1lz.png"/></a>
 		</div>
-		<div class="second-col-footer-links">
+		<div class="column small-12 medium-6 large-3">
 			<h3>Customer Care</h3>
 				<li><%= link_to "Contact Us", about_path %></li>
 				<li><%= link_to "Shipping", about_path %></li>
@@ -73,20 +53,25 @@
 				<li><%= link_to "Returns/Exchanges", about_path %></li>
 				<li><%= link_to "Payments", about_path %></li>
 		</div>
-		<div class="third-col-footer-links">
+		<div class="column small-12 medium-6 large-3">
 			<h3>About</h3>
 				<li><%= link_to "About us", about_path %></li>
 				<li><%= link_to "Blog", about_path %></li>
 				<li><%= link_to "Competitions", about_path %></li>
 		</div>
-		<div class="fourth-col-footer-links">
+		<div class="column small-12 medium-6 large-3">
 			<div class="fb-like-box" data-href="https://www.facebook.com/sydneysister" data-width="350px" data-colorscheme
 			="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false">
 		</div>
+		<div class="clear"></div>
 	</div>
 </footer>
 
-</body>
-
-
+	  </div>
+    <%= javascript_include_tag "application" %>
+  </body>
 </html>
+
+
+
+

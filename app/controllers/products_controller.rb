@@ -2,7 +2,13 @@ class ProductsController < ApplicationController
 	# skip_before_filter :verify_authenticity_token
 
 	def index
-		@products = Product.all
+		if params[:category].present?
+			# category = Category.where(name: params[:category]).first
+			# category_products = CategoryProduct.where(category_id: category.id)
+  		# @products = Product.where()
+		else
+ 			@products = Product.all
+		end
 	end
 
 	def show
@@ -15,3 +21,6 @@ class ProductsController < ApplicationController
 		params.require(:product).permit(:name, :description, :price, :brand, :size, :image)
 	end
 end
+
+# routes
+# Ω

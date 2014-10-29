@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root :to => 'pages#home'
 
   resources :users, only: [:new, :create, :destroy, :edit, :update, :show]
-  resources :products
+  resources :products, only: [:index]
   resources :categories
   resources :orders
   resources :orders_products
@@ -17,7 +17,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :products
+    resources :categories
   end
-
 
 end

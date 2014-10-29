@@ -1,0 +1,16 @@
+<div class="checkbox">
+<%= form_tag(admin_categories_path, method: :post) do %>
+  Categories: <br/>
+  	<ul>
+  		<% Category.all.each do |category| %>
+    	<li class="item"><%= check_box_tag "admin_categories[category_ids][]", category.id, false, id: dom_id(category) %>
+    	<%= label_tag dom_id(category), category.name %></li><br>
+  		<% end %>
+		</ul>
+<%= submit_tag('Assign Category') %>
+<% end %>
+
+
+
+
+
