@@ -87,8 +87,6 @@ module ApplicationHelper
 		nav + secondNav
 	end
 
-
-# =======
 # 		  nav += "<li>#{ link_to('Shop', products_path) }</li>"
 # 		  nav += "<li>#{ link_to('About', about_path) }</li>"
 # 		  nav += "<li>#{ link_to('FAQ', faq_path) }</li>"
@@ -110,5 +108,4 @@ module ApplicationHelper
 # 		end
 # 	nav
 
-	end
 end

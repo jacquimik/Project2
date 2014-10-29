@@ -31,7 +31,6 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
->>>>>>> 61bb1eb252bd8b0f79cd378ad01549be3da02d78
 
 <%# FACEBOOK LINK IN FOOTER - FOR SOME REASON HAS TO GO HERE ? (according to fb) %>
 <div id="fb-root"></div>
@@ -43,45 +42,7 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-=======
-	<header>
-		<div class="navigation-bar">
-			<div class="top-navigation">
-				<nav class="top-nav-bar">
-	   			<ul>
-	     			<li><%= link_to('Home', root_path) %></li>
-	     	 		<%== intellinav %>
-					</ul>
-				</nav> 
-			</div>
 
-<li>
-		<div class="second-nav-bar">
-			<a href="http://www.sydneysister.com"><img src="http://i.imgur.com/yUpKyKn.png" id="header-img"/> </a>
- 				<nav class="nav-bar-2">
-					<ul>
-						<li><%= link_to "New In", about_path %></li>
-						<li><%= link_to "Dresses", about_path %></li>
-						<li><%= link_to "Tops", about_path %></li>
-						<li><%= link_to "Bottoms", about_path %></li>
-						<li><%= link_to "Playsuits", about_path %></li>
-						<li><%= link_to "Accessories", about_path %></li>
-						<li><%= link_to "Outerwear", about_path %></li>
-						<li><%= link_to "Sale", about_path %></li>
-					<div class="clear"></div>
-  				</ul>
-  				<div class="menu-bar"></div>
-				</nav>
-			</div>
-		</div> 
-	</div>
-	</header>
-
-
-	<%= yield %>
-
-
-<div class="small-2 large-4 columns">...</div>
 
 <footer>
 	<div class="row">

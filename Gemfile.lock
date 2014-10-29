@@ -173,12 +173,9 @@ DEPENDENCIES
   binding_of_caller
   bootstrap-sass
   coffee-rails (~> 4.0.0)
-<<<<<<< HEAD
-  foundation-rails
-=======
   dotenv-rails
+  foundation-rails
   hiredis (~> 0.4.5)
->>>>>>> 61bb1eb252bd8b0f79cd378ad01549be3da02d78
   jbuilder (~> 2.0)
   jquery-rails
   mail
