@@ -1,4 +1,4 @@
-[User, Cart, CartProduct, Product, Category].each do |klass|
+[User, Cart, OrderProduct, Product, Category].each do |klass|
   klass.send :destroy_all
 end
 
@@ -75,7 +75,7 @@ white_shirt = Product.create!(
 
 )
 
-annies_cart = annie.cart
+#annies_cart = Cart.create :user_id => annie.id
 
-annies_cart.products << denim_jacket
-annies_cart.products << green_shirt
+# annies_cart.products << denim_jacket
+# annies_cart.products << green_shirt
