@@ -56,6 +56,10 @@
   text-align: center;
 }
 
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+  background-color: pink;
+}
+
 nav {
  width: 100%;
 }
