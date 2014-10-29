@@ -2,6 +2,38 @@
   klass.send :destroy_all
 end
 
+
+[ 
+  'New In',
+  'Dresses',
+  'Party Dresses',
+  'Maxi Dresses',
+  'Casual Dresses',
+  'Tops',
+  'Dress Shirts',
+  'Casual Shirts',
+  'Long Sleeve',
+  'Crop Tops',
+  'Bottoms',
+  'Jeans',
+  'Shorts',
+  'Skirts',
+  'Pants',
+  'Playsuits',
+  'Accessories',
+  'Bags',
+  'Jewellery',
+  'Shoes',
+  'Outerwear',
+  'Jackets',
+  'Coats',
+  'Kimonos',
+  'Knitwear',
+  'Sale'
+].each do |category|
+  Category.create! name: category
+end
+
 annie = User.create!(
   firstname: 'Angela',
 	lastname: 'Mikulasev',
@@ -13,16 +45,18 @@ annie = User.create!(
 
 denim_jacket = Product.create!(
 	name: 'jacket', 
-	price: '$29.99',
+	price: '29.99',
 	size: '10',
 	description: 'Body: 100% Leather, Sleeves: 98% Cotton, 2% Elastane, Lining: 100% Cotton, Sleeve Lining: 100% Polyester', 
 	brand: 'bordot', 
-	image: 'http://images.asos-media.com/inv/media/7/9/3/6/3296397/black/image1xl.jpg'
+	# image: 'http://images.asos-media.com/inv/media/7/9/3/6/3296397/black/image1xl.jpg'
+	image: 'http://images.asos-media.com/inv/media/7/9/3/6/3296397/black/image1xl.jpg',
+  category_id: Category.where(name: 'Tops').first.id
 )
 
 green_shirt = Product.create!(
   name: 't-shirt',
-  price: '$19.99',
+  price: '19.99',
   size: '8',
   description: 'green shirt',
   brand: 'kookai',
@@ -31,37 +65,17 @@ green_shirt = Product.create!(
 
 white_shirt = Product.create!(
   name: 't-shirt',
-  price: '$19.99',
+  price: '19.99',
   size: '8',
   description: 'white shirt',
   brand: 'kookai',
-  image: 'http://images.asos-media.com/inv/media/6/5/3/1/4241356/pinkgrey/image1xl.jpg'
+  # image: 'http://images.asos-media.com/inv/media/6/5/3/1/4241356/pinkgrey/image1xl.jpg'
+  image: 'http://images.asos-media.com/inv/media/6/5/3/1/4241356/pinkgrey/image1xl.jpg',
+  category_id: Category.where(name: 'Dress Shirts').first.id
+
 )
 
 annies_cart = annie.cart
 
 annies_cart.products << denim_jacket
 annies_cart.products << green_shirt
-
-[ 
-  'accessories',
-  'coats & jackets',
-  'denim',
-  'designer',
-  'dresses',
-  'jumpers',
-  'jeans',
-  't-shirts',
-  'tanks',
-  'jewellery',
-  'cardigans',
-  'jumpsuits',
-  'shirts',
-  'shoes',
-  'shorts',
-  'skirts',
-  'swimwear',
-  'pants'
-].each do |category|
-  Category.create! name: category
-end

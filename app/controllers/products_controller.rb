@@ -11,10 +11,17 @@ class ProductsController < ApplicationController
  	# 		@products = Product.all
 		# end
 
-		@cart = current_user.cart
 
-		@products = Product.all
+		@products = if params[:category].present?
+			category = Category.where(name: params[:category]).first
 
+ 			Product.where(category_id: category.id)
+		else
+ 			Product.all
+		end
+
+
+		# @cart = current_user.cart
 	end
 
 	def show
@@ -39,3 +46,4 @@ class ProductsController < ApplicationController
 		end
 	end
 end
+

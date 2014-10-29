@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root :to => 'pages#home'
 
   resources :users, only: [:new, :create, :destroy, :edit, :update, :show]
-  resources :products, only: [:index]
+  resources :products, only: [:index, :show]
   resources :categories
   resources :orders_products
   
