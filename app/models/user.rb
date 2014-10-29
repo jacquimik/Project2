@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
 	has_many :orders
 	has_one :cart, dependent: :destroy
 
-	validates :email, :uniqueness => true
+	# validates :email, :uniqueness => true
 	validates :email, confirmation: true
 	validates :firstname, :lastname, :email, :password, :presence => true
 	validates :password, length: { in: 6..20 }
