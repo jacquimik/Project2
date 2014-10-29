@@ -1,11 +1,12 @@
 class Cart < ActiveRecord::Base
 	belongs_to :user
-	validates :user_id, presence: true
+	# validates :user_id, presence: true
 
   has_many :cart_products
 	has_many :products, through: :cart_products
 
   def total_price
-    0
+    product_id = Product.find(product_ids)
+    total = product_id.sum(&:price)
   end
 end

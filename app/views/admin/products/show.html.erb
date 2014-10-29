@@ -1,19 +1,13 @@
-<h2><%= @product.name %></h2>
-
 <div class="show_products">
 	<h2><%= @product.name %></h2>
-		<p>
-			<%= @product.price %>
-			<%= @product.size %>
-			<%= @product.brand %>
-		</p>
+			<p>$ <%= @product.price %></p>
+			<p>Size: <%= @product.size %></p>
+			<p>Brand: <%= @product.brand %></p>
 		<div class="img">
 			<img src="<%= @product.image %>">
 		</div>
 
-		<p>
-			<%= @product.description %>
-		</p>
+		<p>Description: <%= @product.description %></p>
 </div>
 
 <%= link_to 'Edit', edit_admin_product_path(@product) %>

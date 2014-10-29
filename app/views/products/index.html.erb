@@ -4,8 +4,17 @@
       <li>
     		<% @products.each do |product| %>
     			<div class="product-image">
-    	 			<img src="<%= product.image %>">
+<!--     	 			<img src="<%#= product.image %>"> -->
+            <%= image_tag product.image %>
     	 		</div>
+          <h2>
+            <%= link_to product.name, product_path(product) %>
+          </h2>
+          <p class="product-info">
+            <%= product.price %></br>
+            <%= product.brand %>
+          </p>
+
           <div>
             <%= form_for(CartProduct.new(product_id: product.id)) do |f| %>
               <%= f.hidden_field :product_id %>
@@ -13,9 +22,11 @@
             <% end %>
           </div>
      			<div class="link">
-     				<%= link_to product.name %>
+     				<%#= link_to product.name %>
      			</div>
         <% end %>
       </li>
     </ul>
 </div>
+
+

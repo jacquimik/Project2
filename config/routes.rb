@@ -6,11 +6,12 @@ Rails.application.routes.draw do
   resources :users, only: [:new, :create, :destroy, :edit, :update, :show]
   resources :products
   resources :categories
-  resources :orders
   resources :orders_products
+  
   resource :cart, only: [:show, :edit, :update]
+  resources :cart_products, only: [:create, :destroy], path: 'cart-products'
 
-  resources :cart_products, only: [:create]
+  resources :orders, only: [:new, :create, :show]
 
   get '/about' => 'pages#about'
   get '/faq' => 'pages#faq'

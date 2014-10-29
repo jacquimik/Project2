@@ -1,11 +1,13 @@
 <% if @user.errors.any? %>
-  <ol>
+  <div id="error_explanation">
+    <h4><%= pluralize(@user.errors.count, "error") %> prohibited
+      you from successfully updating your login details:</h4>
+    <ul>
     <% @user.errors.full_messages.each do |msg| %>
-      <li>
-        <%= msg %>
-      </li>
+      <li><%= msg %></li>
     <% end %>
-  </ol>
+    </ul>
+  </div>
 <% end %>
 
 

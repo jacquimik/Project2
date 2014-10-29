@@ -15,8 +15,20 @@ html {
 	border: 1px solid #CBB1B1;
 	background: #ffffff url("images/ui-bg_flat_75_ffffff_40x100.png") 50% 50% repeat-x;
 	color: #222222;
-	width: 40%;
+	font-size: 12px;
 	height: auto;
+}
+
+a#ui-id-1.ui-tabs-anchor {
+	font-size: 0.8em;
+}
+
+a#ui-id-2.ui-tabs-anchor {
+	font-size: 0.8em;
+}
+
+a#ui-id-3.ui-tabs-anchor {
+	font-size: 0.8em;
 }
 
 div#tabs.ui-tabs.ui-widget.ui-widget-content.ui-corner-all {
@@ -29,15 +41,15 @@ div.showproducts, div#tabs {
 }
 
 div.product_name {
-    padding: 20px;
-	font-size: 70px;
+  padding: 20px;
+	font-size: 40px;
 	font-family: Raleway;
 }
 
 .product-image img {
 	width: 330px;
 	height: auto;
-	padding: 65px; 
+	padding: 10px; 
 }
 
 
@@ -57,4 +69,69 @@ div#slides {
 	top: 0px; 
 	width: 600px; 
 	height: 300px;
+}
+
+p.size_guide_head {
+	font-size: 16px;
+}
+
+td img {
+	width: 200px;
+	height: auto;
+}
+
+td.total-price {
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+td.checkout-link {
+	padding-bottom: 10px;
+}
+
+h2 {
+	font-family: Raleway;
+}
+
+p {
+	font-family: Raleway;
+}
+
+ul {
+	list-style: none;
+	padding-left: 5px;
+}
+
+ul li div.admin-img img {
+	display:inline-block;
+	width: 330px;
+	height: auto;
+	margin: 0px;
+}
+
+li a {
+	padding: 10px;
+}
+
+tr th {
+	text-align: left;
+	padding-top: 10px;
+	padding-left: 5px;
+	font-family: Raleway;
+}
+
+td {
+	font-family: Raleway;
+}
+
+tr.product td {
+	padding-right: 15px;
+}
+
+h3 {
+	font-family: Raleway;
+}
+
+h4 {
+	font-family: Raleway;
 }

@@ -1,21 +1,28 @@
 <table id="cart">
   <tr>
     <th>Product</th>
-    <th>Qty</th>
+    <th>Product Name</th>
     <th class="price">Price</th>
   </tr>
 
-  <% @cart.products.each do |product| %>
+  <% @cart.cart_products.each do |cart_product| %>
+    <% product = cart_product.product %>
     <tr class="product">
+      <td><%= image_tag(product.image) %></td>
       <td><%= product.name %></td>
-      <td class="qty"><%= product.quantity %></td>
-      <td class="price"><%= product.price %></td>
+      <!-- <td class="qty"><%#= product.quantity %></td> -->
+      <td class="price">$<%= product.price %></td>
+      <td><%= link_to 'Remove from cart', cart_product_path(cart_product), method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
    <% end %>
 
   <tr>
-    <td class="total price" colspan="3">
-      Total: <%= @cart.total_price %>
+    <td class="total-price" colspan="3">
+      Total: $<%= @cart.total_price %>
     </td>
+  </tr>
+
+  <tr>
+    <td class="checkout-link"><%= link_to 'Checkout', new_order_path %></td>
   </tr>
 </table>
