@@ -5,27 +5,15 @@ require File.expand_path('../application', __FILE__)
 Rails.application.initialize!
 
 # Configuration for using SendGrid on Heroku
-ActionMailer::Base.delivery_method = :smtp
-ActionMailer::Base.smtp_settings = {
-  address:              'smtp.sendgrid.com',
-  port:                 587,
-  domain:               'heroku.com' ,
-  user_name:            ENV['SENDGRID_USERNAME'],
-  password:             ENV['SENDGRID_PASSWORD'],
-  authentication:       'plain',
-  openssl_verify_mode: 'none',
-  enable_starttls_auto: true  }
 
-
-
-# # Configuration for using SendGrid on Heroku
 # ActionMailer::Base.delivery_method = :smtp
 # ActionMailer::Base.smtp_settings = {
-#   :user_name => "yourSendGridusernameyougetfromheroku",
-#   :password => "yourSendGridpasswordyougetfromheroku",
-#   :domain => "staging.freelanceful.com",
-#   :address => "smtp.sendgrid.net",
-#   :port => 587,
-#   :authentication => :plain,
-#   :enable_starttls_auto => true
-# }
+#   address:              'smtp.sendgrid.com',
+#   port:                 587,
+#   domain:               'heroku.com' ,
+#   user_name:            ENV['SENDGRID_USERNAME'],
+#   password:             ENV['SENDGRID_PASSWORD'],
+#   authentication:       'plain',
+#   openssl_verify_mode: 'none',
+#   enable_starttls_auto: true  }
+

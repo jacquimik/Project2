@@ -1,9 +1,12 @@
 class Order < ActiveRecord::Base
-	# belongs_to :user
+	belongs_to :user
 	# validates :cart_id, presence: true
 
 	# belongs_to :cart
 	# validates :cart, presence: true
+
+  has_many :order_products
+  has_many :products, :through => :order_products
 
 	validates :streetline1, presence: true, if: Proc.new { |o| o.streetline2.blank? }
   validates :streetline2, presence: true, if: Proc.new { |o| o.streetline1.blank? }
