@@ -6,7 +6,6 @@
 
 	  <title>Sydney Sister</title>
 	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	  <%= csrf_meta_tags %>
   </head>
 
@@ -54,14 +53,14 @@
 		  		<section class="top-bar-section">
 		  			<ul class="left">
 		  				<li><%= link_to "New In", products_path %></li>
-		  					<li class="has-dropdown"><%= link_to "Dresses", products_path %></li>
+		  					<li class="has-dropdown"><%= link_to "Dresses", products_path %>
 									<ul class="dropdown">
 										<li><%= link_to "Party Dresses", products_path %></li>
 										<li><%= link_to "Maxi Dresses", products_path %></li>
 										<li><%= link_to "Casual Dresses", products_path %></li>
 									</ul>
 								</li>
-							<li class="has-dropdown"><%= link_to "Tops", products_path %></li>
+							<li class="has-dropdown"><%= link_to "Tops", products_path %>
 								<ul class="dropdown">
 									<li><%= link_to "Party Tops", products_path %></li>
 									<li><%= link_to "Casual Tops", products_path %></li>
@@ -70,7 +69,7 @@
 									<li><%= link_to "Crop Tops", products_path %></li>
 								</ul>
 							</li>
-							<li class="has-dropdown"><%= link_to "Bottoms", products_path %></li>
+							<li class="has-dropdown"><%= link_to "Bottoms", products_path %>
 								<ul class="dropdown">
 									<li><%= link_to "Jeans", products_path() %></li>
 									<li><%= link_to "Shorts", products_path %></li>
@@ -79,14 +78,14 @@
 								</ul>
 							</li>
 							<li><%= link_to "Playsuits", products_path %></li>
-							<li class="has-dropdown"><%= link_to "Accessories", products_path %></li>
+							<li class="has-dropdown"><%= link_to "Accessories", products_path %>
 								<ul class="dropdown">
 									<li><%= link_to "Bags", products_path %></li>
 									<li><%= link_to "Jewellery", products_path %></li>
 									<li><%= link_to "Shoes", products_path %></li>
 								</ul>
 							</li>
-							<li class="has-dropdown"><%= link_to "Outerwear", products_path %></li>
+							<li class="has-dropdown"><%= link_to "Outerwear", products_path %>
 								<ul class="dropdown">
 									<li><%= link_to "Jackets", products_path %></li>
 									<li><%= link_to "Coats", products_path %></li>
@@ -156,7 +155,7 @@
 
 
 	  </div>
-<%= javascript_include_tag "application" %> 
+<%= javascript_include_tag 'application' %>
 <!-- DO NOT DELETE THIS JACQUI YA FEG -->
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
 	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
