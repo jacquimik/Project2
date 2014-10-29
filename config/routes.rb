@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'carts/show'
+
   root :to => 'pages#home'
 
   resources :users, only: [:new, :create, :destroy, :edit, :update, :show]
@@ -6,7 +8,9 @@ Rails.application.routes.draw do
   resources :categories
   resources :orders
   resources :orders_products
-  #resources :admin
+  resource :cart, only: [:show, :edit, :update]
+
+  resources :cart_products, only: [:create]
 
   get '/about' => 'pages#about'
   get '/faq' => 'pages#faq'
@@ -14,6 +18,11 @@ Rails.application.routes.draw do
   get '/contact' => 'pages#contact'
 
   resources :sessions, only: [:new, :create, :destroy]
+
+  # resource :cart, only: [:show] do
+  # put 'add/:product_id', to: 'carts#add', as: :add_to
+  # put 'remove/:product_id', to: 'carts#remove', as: :remove_from
+  # end
 
   namespace :admin do
     resources :products

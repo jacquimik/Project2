@@ -2,13 +2,19 @@ class ProductsController < ApplicationController
 	# skip_before_filter :verify_authenticity_token
 
 	def index
-		if params[:category].present?
-			# category = Category.where(name: params[:category]).first
-			# category_products = CategoryProduct.where(category_id: category.id)
-  		# @products = Product.where()
-		else
- 			@products = Product.all
-		end
+
+		# if params[:category].present?
+		# 	# category = Category.where(name: params[:category]).first
+		# 	# category_products = CategoryProduct.where(category_id: category.id)
+  # 		# @products = Product.where()
+		# else
+ 	# 		@products = Product.all
+		# end
+
+		@cart = current_user.cart
+
+		@products = Product.all
+
 	end
 
 	def show

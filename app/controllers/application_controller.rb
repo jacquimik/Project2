@@ -5,7 +5,12 @@ class ApplicationController < ActionController::Base
 
   before_action :authenticate
 
+  def current_user
+    @current_user ||= User.find_by id: session[:user_id]
+  end
+
   private
+
   def authenticate
   	@current_user = User.find_by(:id => session[:user_id]) 
   	session[:user_id] = nil unless @current_user.present?

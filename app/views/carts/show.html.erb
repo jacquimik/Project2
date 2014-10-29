@@ -1,0 +1,21 @@
+<table id="cart">
+  <tr>
+    <th>Product</th>
+    <th>Qty</th>
+    <th class="price">Price</th>
+  </tr>
+
+  <% @cart.products.each do |product| %>
+    <tr class="product">
+      <td><%= product.name %></td>
+      <td class="qty"><%= product.quantity %></td>
+      <td class="price"><%= product.price %></td>
+    </tr>
+   <% end %>
+
+  <tr>
+    <td class="total price" colspan="3">
+      Total: <%= @cart.total_price %>
+    </td>
+  </tr>
+</table>

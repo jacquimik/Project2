@@ -1,32 +1,19 @@
-<div class="showproducts">
-	<h2><%= @product.name %></h2>
-		<div class="product-image">
-			<img src="<%= @product.image %>">
-		</div>	
+<!-- show product info -->
 
-		<p>
-			<%= @product.description %>
-		</p>
+<div class="showproducts">
+<!-- <h2><%#= @product.name %></h2> -->
+	<div class="product-image">
+		<img src="<%= @product.image %>">
+	</div>
+</div>	
+
+<div class="product_name">
+		<%= @product.name %>
+	</div>
 </div>
 
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>jQuery UI Tabs - Open on mouseover</title>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script>
-  $(function() {
-    $( "#tabs" ).tabs({
-      event: "mouseover"
-    });
-  });
-  </script>
-</head>
-<body>
+
+<!-- tab widget -->
  
 <div id="tabs">
   <ul>
@@ -44,7 +31,7 @@
     <p>This will be about shipping anad payment.</p>
   </div>
 </div>
- 
+<div class="clear"></div>
  
 </body>
 </html>
