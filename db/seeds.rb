@@ -4,24 +4,32 @@ end
 
 
 [ 
-  'accessories',
-  'coats & jackets',
-  'denim',
-  'designer',
-  'dresses',
-  'jumpers',
-  'jeans',
-  't-shirts',
-  'tanks',
-  'jewellery',
-  'cardigans',
-  'jumpsuits',
-  'shirts',
-  'shoes',
-  'shorts',
-  'skirts',
-  'swimwear',
-  'pants'
+  'New In',
+  'Dresses',
+  'Party Dresses',
+  'Maxi Dresses',
+  'Casual Dresses',
+  'Tops',
+  'Dress Shirts',
+  'Casual Shirts',
+  'Long Sleeve',
+  'Crop Tops',
+  'Bottoms',
+  'Jeans',
+  'Shorts',
+  'Skirts',
+  'Pants',
+  'Playsuits',
+  'Accessories',
+  'Bags',
+  'Jewellery',
+  'Shoes',
+  'Outerwear',
+  'Jackets',
+  'Coats',
+  'Kimonos',
+  'Knitwear',
+  'Sale'
 ].each do |category|
   Category.create! name: category
 end
@@ -37,22 +45,34 @@ annie = User.create!(
 
 denim_jacket = Product.create!(
 	name: 'jacket', 
-	price: '$29.99',
+	price: '29.99',
 	size: '10',
-	description: 'demin jacket', 
+	description: 'Body: 100% Leather, Sleeves: 98% Cotton, 2% Elastane, Lining: 100% Cotton, Sleeve Lining: 100% Polyester', 
 	brand: 'bordot', 
-	image: 'http://www.bardot.com.au/files/product/images/403527/9631jb1-denim-front-.jpg',
-  category_id: Category.where(name: 'jumpers').first.id
+	# image: 'http://images.asos-media.com/inv/media/7/9/3/6/3296397/black/image1xl.jpg'
+	image: 'http://images.asos-media.com/inv/media/7/9/3/6/3296397/black/image1xl.jpg',
+  category_id: Category.where(name: 'Tops').first.id
 )
 
 green_shirt = Product.create!(
   name: 't-shirt',
-  price: '$19.99',
+  price: '19.99',
   size: '8',
   description: 'green shirt',
   brand: 'kookai',
-  image: 'http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=64181961',
-  category_id: Category.where(name: 'shirts').first.id
+  image: 'http://i00.i.aliimg.com/wsphoto/v0/1977650040_1/XS-XXL-New-2014-Women-s-font-b-Shirts-b-font-Fashion-Back-Deep-V-Neck.jpg'
+)
+
+white_shirt = Product.create!(
+  name: 't-shirt',
+  price: '19.99',
+  size: '8',
+  description: 'white shirt',
+  brand: 'kookai',
+  # image: 'http://images.asos-media.com/inv/media/6/5/3/1/4241356/pinkgrey/image1xl.jpg'
+  image: 'http://images.asos-media.com/inv/media/6/5/3/1/4241356/pinkgrey/image1xl.jpg',
+  category_id: Category.where(name: 'Dress Shirts').first.id
+
 )
 
 annies_cart = annie.cart

@@ -16,4 +16,7 @@ class ApplicationController < ActionController::Base
   	session[:user_id] = nil unless @current_user.present?
   end
 
+  def check_login
+    redirect_to signup_path unless @current_user.present?
+  end
 end

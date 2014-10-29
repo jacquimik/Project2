@@ -29,6 +29,7 @@ gem 'bootstrap-sass'
 gem 'hiredis', '~> 0.4.5'
 gem 'rails_12factor', group: :production
 gem 'mail'
+gem 'stripe'
 
 
 gem 'foundation-rails'

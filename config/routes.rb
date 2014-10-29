@@ -4,13 +4,14 @@ Rails.application.routes.draw do
   root :to => 'pages#home'
 
   resources :users, only: [:new, :create, :destroy, :edit, :update, :show]
-  resources :products, only: [:index]
+  resources :products, only: [:index, :show]
   resources :categories
-  resources :orders
   resources :orders_products
+  
   resource :cart, only: [:show, :edit, :update]
+  resources :cart_products, only: [:create, :destroy], path: 'cart-products'
 
-  resources :cart_products, only: [:create]
+  resources :orders, only: [:new, :create, :show]
 
   get '/about' => 'pages#about'
   get '/faq' => 'pages#faq'

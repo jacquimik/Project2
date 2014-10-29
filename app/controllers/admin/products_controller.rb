@@ -1,5 +1,6 @@
 class Admin::ProductsController < ApplicationController
 	before_filter :check_for_admin
+
 	def index
 		@products = Product.all
 	end
@@ -36,8 +37,9 @@ class Admin::ProductsController < ApplicationController
 
 
 	private
+
 	def check_for_admin
-		redirect_to root_path unless @current_user.admin
+		redirect_to root_path if current_user.nil? || !current_user.admin
 	end
 
 	def product_params
