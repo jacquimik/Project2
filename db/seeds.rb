@@ -43,6 +43,15 @@ annie = User.create!(
 	admin: true
 )
 
+buddy = User.create!(
+  firstname: 'Buddy',
+  lastname: 'B',
+  email: 'buddy@buddy.com',
+  password: 'buddy12', 
+  password_confirmation:'buddy12', 
+  admin: false
+)
+
 denim_jacket = Product.create!(
 	name: 'Jacket', 
 	price: '219.99',
