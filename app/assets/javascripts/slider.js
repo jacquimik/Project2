@@ -1,3 +1,4 @@
+// $(document).ready(function () {
 // var ul;
 // var li_items; 
 // var li_number;
@@ -70,3 +71,4 @@
 //   }, opts.dalay || 17);
 // }
 // window.onload = init;
+// }

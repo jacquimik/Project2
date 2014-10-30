@@ -45,8 +45,8 @@
 		  	<nav class="top-bar" data-topbar role="navigation">
 		  		<section class="top-bar-section">
 		  			<ul class="left">
- 		  				<li><%#= link_to "New In", products_path(category: category.name) %></li>
-		  					<li class="has-dropdown"><%= link_to "Dresses", products_path(category: "Casual Dresses") %>
+ 		  				<li><%= link_to "New In", products_path(category: "New In") %></li>
+		  					<li class="has-dropdown"><%= link_to "Dresses", products_path(category: "Dresses") %>
 									<ul class="dropdown">
 										<li><%= link_to "Party Dresses", products_path(category: "Party Dresses") %></li>
 										<li><%= link_to "Maxi Dresses", products_path(category: "Maxi Dresses") %></li>
@@ -80,7 +80,7 @@
 							</li>
 							<li class="has-dropdown"><%= link_to "Outerwear", products_path(category: "Outerwear") %>
 								<ul class="dropdown">
-									<li><%= link_to "Jackets", products_path(category: "Outerwear") %></li>
+									<li><%= link_to "Jackets", products_path(category: "Jackets") %></li>
 									<li><%= link_to "Coats", products_path(category: "Coats") %></li>
 									<li><%= link_to "Kimonos", products_path(category: "Kimonos") %></li>
 									<li><%= link_to "Knitwear", products_path(category: "Knitwear") %></li>
