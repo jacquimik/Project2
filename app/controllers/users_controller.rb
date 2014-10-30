@@ -14,9 +14,17 @@ class UsersController < ApplicationController
 	        session[:user_id] = @user.id
 					# Merge in an existing cart if the user has one.
 					if session[:cart_id]
-						cart = Cart.find session[:cart_id]
+						cart = Cart.find_by :id => session[:cart_id]
+						
+						# If the cart is missing we'll create a new one for them.
+						unless cart.present?
+							cart = Cart.create
+							session[:cart_id] = cart.id
+						end
+
 						cart.user_id = @user.id
 						cart.save
+						end
 					end
 		    	redirect_to root_path
 	      else
