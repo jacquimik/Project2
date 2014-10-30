@@ -1,9 +1,10 @@
+<div class="products-index-heading">
+  <h2>Shop the latest trends<%#= Category.name %></h2>
+  <p>Stay on trend with the latest looks from Sydney Sister</p>
+</div>
 <div class="products-index">
   <ul>
     <li>
-
-
-	<h2><%= Category.name %></h2>
     <ul>
       <li>
     		<% @products.each do |product| %>
@@ -20,9 +21,9 @@
               </div>
             </div>
     	 		</div>
-          <h2>
+          <h4>
             <%= link_to product.name, product_path(product) %>
-          </h2>
+          </h4>
           <p class="product-info">
             $<%= product.price %></br>
             <%= product.brand %>
