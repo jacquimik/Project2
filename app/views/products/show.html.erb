@@ -1,67 +1,70 @@
 <!-- show product info -->
+<div class="row products">
+  <div class="products_show column small-5">
+      <div class="showproducts ">
+      <!-- <h2><%#= @product.name %></h2> -->
+      	<div class="product-image">
+      		<img src="<%= @product.image %>">
+      	</div>
+      </div>	
 
-<div class="showproducts">
-<!-- <h2><%#= @product.name %></h2> -->
-	<div class="product-image">
-		<img src="<%= @product.image %>">
-	</div>
-</div>	
+    </div>
 
-<div class="product_name">
-		<%= @product.name %>
-	</div>
+    <div class="column small-7">
+      <div class="product_name">
+        <%= @product.name %>
+      </div>
+      <select class="size-select">
+        <optgroup label="Size">
+          <option value="6">6</option>
+          <option value="8">8</option>
+          <option value="10">10</option>
+          <option value="10">12</option>
+          <option value="10">14</option>
+        </optgroup>
+      </select>
+
+
+      <%= form_for(CartProduct.new(product_id: @product.id)) do |f| %>
+        <%= f.hidden_field :product_id %>
+        <%= f.submit 'Add to cart' %>
+      <% end %>
+
+
+      <!-- tab widget -->
+       
+      <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">Details</a></li>
+          <li><a href="#tabs-2">Size guide</a></li>
+          <li><a href="#tabs-3">Shipping & Payment</a></li>
+        </ul>
+        <div id="tabs-1">
+          <p><%= @product.description %></p>
+        </div>
+        <div id="tabs-2">
+          <a href="http://imgur.com/FKeBm6Z"><img src="http://i.imgur.com/FKeBm6Z.png" title="source: imgur.com" /></a>
+          <p class="size_guide_head">BUST:</p>
+            <p>Measure the bust line at the fullest part of your chest. Stand naturally with your heels together and arms resting by the side of your body. Position the tape so that it covers the widest part of your back and the fullest part of your chest.</p>
+
+          <p class="size_guide_head">WAIST:</p>
+            <p>Place your hands at your natural waistline. This is where the tape should be positioned. If you cannot find your natural waist, stand with your feet slightly apart and bend to the side. Where your waist creases is the natural waist.</p>
+
+          <p class="size_guide_head">HIPS:</p>
+            <p>Stand naturally with your heels together in a relaxed pose. Measure with the tape.</p>
+
+          <p class="size_guide_head">ADDITIONAL:</p>
+            <p>Depending on the style and/or the material of the clothing, sizing may vary.</p>
+
+            <p>If you have any enquiries about sizes on a particular dress or are unsure of your size please feel free to contact us at sydneysister1@gmail.com</p>
+        </div>
+        <div id="tabs-3">
+          <p>If you live in a metro area in Australia, and order before 3pm, you will receive your parcel the next business day.</p>
+          <p>All purchases are shipped express from Sydney with Australia Post at no additional charge. This means next day delivery for the majority of customers. </p>
+          <p>Order before 3pm on weekdays, and your order will be shipped out on the day of purchase. Purchases made on weekends and public holidays are processed on the following business day.</p>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
 </div>
-
-<%= form_for(CartProduct.new(product_id: @product.id)) do |f| %>
-  <%= f.hidden_field :product_id %>
-  <%= f.submit 'Add to cart' %>
-<% end %>
-
-<select>
-  <optgroup label="Size">
-    <option value="6">6</option>
-    <option value="8">8</option>
-    <option value="10">10</option>
-    <option value="10">12</option>
-    <option value="10">14</option>
-  </optgroup>
-</select>
-
-
-
-<!-- tab widget -->
- 
-<div id="tabs">
-  <ul>
-    <li><a href="#tabs-1">Details</a></li>
-    <li><a href="#tabs-2">Size guide</a></li>
-    <li><a href="#tabs-3">Shipping & Payment</a></li>
-  </ul>
-  <div id="tabs-1">
-    <p><%= @product.description %></p>
-  </div>
-  <div id="tabs-2">
-    <a href="http://imgur.com/FKeBm6Z"><img src="http://i.imgur.com/FKeBm6Z.png" title="source: imgur.com" /></a>
-    <p class="size_guide_head">BUST:</p>
-      <p>Measure the bust line at the fullest part of your chest. Stand naturally with your heels together and arms resting by the side of your body. Position the tape so that it covers the widest part of your back and the fullest part of your chest.</p>
-
-    <p class="size_guide_head">WAIST:</p>
-      <p>Place your hands at your natural waistline. This is where the tape should be positioned. If you cannot find your natural waist, stand with your feet slightly apart and bend to the side. Where your waist creases is the natural waist.</p>
-
-    <p class="size_guide_head">HIPS:</p>
-      <p>Stand naturally with your heels together in a relaxed pose. Measure with the tape.</p></br>
-
-    <p>Depending on the style and/or the material of the clothing, sizing may vary.</p>
-
-    <p>If you have any enquiries about sizes on a particular dress or are unsure of your size please feel free to contact us at sydneysister1@gmail.com</p>
-  </div>
-  <div id="tabs-3">
-    <p>If you live in a metro area in Australia, and order before 3pm, you will receive your parcel the next business day.</p>
-    <p>All purchases are shipped express from Sydney with Australia Post at no additional charge. This means next day delivery for the majority of customers. </p>
-    <p>Order before 3pm on weekdays, and your order will be shipped out on the day of purchase. Purchases made on weekends and public holidays are processed on the following business day.</p>
-  </div>
-</div>
-<div class="clear"></div>
- 
-</body>
-</html>
