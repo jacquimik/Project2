@@ -58,33 +58,14 @@ div.showproducts, div#tabs {
 
 div.product_name {
 	font-size: 40px;
-	font-family: Raleway;
 }
 
 .product-image img {
 	width: 330px;
 	height: auto;
-	padding: 10px; 
+	padding-left: 10px; 
+	padding-right: 10px;
 }
-
-
-/*div#slider1_container {
-	position: relative; 
-	top: 0px; 
-	left: 0px;
-	width: 800px;
-	height: 500px; 
-}
-
-div#slides {
-	cursor: move; 
-	position: absolute; 
-	overflow: hidden; 
-	left: 0px; 
-	top: 0px; 
-	width: 600px; 
-	height: 300px;
-}*/
 
 
 p.size_guide_head {
@@ -105,13 +86,8 @@ td.checkout-link {
 	padding-bottom: 10px;
 }
 
-h2 {
-	font-family: Raleway;
-}
-
 p {
 	font-size: 13px;
-	font-family: Raleway;
 }
 
 ul {
@@ -127,30 +103,13 @@ ul li div.admin-img img {
 }
 
 li a {
-	padding: 10px;
+	padding-left: 10px;
 }
 
 tr th {
 	text-align: left;
 	padding-top: 10px;
 	padding-left: 5px;
-	font-family: Raleway;
-}
-
-td {
-	font-family: Raleway;
-}
-
-tr.product td {
-	padding-right: 15px;
-}
-
-h3 {
-	font-family: Raleway;
-}
-
-h4 {
-	font-family: Raleway;
 }
 
 .product_box {
@@ -179,7 +138,7 @@ input {
 	padding: 20px;
 	border: 0px;
 	font-size: 12px;
-	margin: 5px;
+	margin-bottom: 40px;
 }
 
 body.sydney-sisters select {
@@ -230,4 +189,68 @@ form.new_cart_product input {
 div#tabs p {
 	font-size: 14px;
 	text-align: left;
+}
+
+.content {
+	padding: 30px;
+}
+
+.content h1 {
+	padding-bottom: 20px;
+	font-size: 40px;
+}
+
+.content p {
+	border-bottom: 1.5px solid black;
+	padding-bottom: 15px;
+}
+
+.shipping {
+	padding: 30px;
+}
+
+.payment {
+	padding: 30px;
+}
+
+div.container div.form {
+	padding-top: 25px;
+	padding-right: 330px;
+	padding-left: 330px;
+}
+
+div.products-index-heading {
+	text-align: center;
+	border-bottom: 1.5px solid black;
+	margin-left: 70px;
+	margin-right: 70px;
+	padding-top: 8px;
+}
+
+div.container div.products-index ul li  {
+	padding-top: 40px;
+	/*text-align: center;*/
+}
+
+div.front {
+	width: 320px;
+	height: 383px;
+}
+
+div.back {
+	width: 320px;
+	height: 383px;
+}
+
+div.flip-container {
+	width: 320px;
+	height: 383px;
+}
+
+div.product_box {
+	padding: 10px;
+}
+
+p.product-info {
+	padding-left: 10px;
 }
