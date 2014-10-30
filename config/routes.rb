@@ -11,7 +11,9 @@ Rails.application.routes.draw do
   resource :cart, only: [:show, :edit, :update]
   resources :cart_products, only: [:create, :destroy], path: 'cart-products'
 
-  resources :orders, only: [:new, :create, :show]
+  resources :orders
+
+  # resources :orders, only: [:new, :create, :show, :update]
 
   get '/about' => 'pages#about'
   get '/faq' => 'pages#faq'
@@ -25,13 +27,6 @@ Rails.application.routes.draw do
 
 
   resources :sessions, only: [:new, :create, :destroy]
-
-  resources :charges
-
-  # resource :cart, only: [:show] do
-  # put 'add/:product_id', to: 'carts#add', as: :add_to
-  # put 'remove/:product_id', to: 'carts#remove', as: :remove_from
-  # end
 
   namespace :admin do
     resources :products
