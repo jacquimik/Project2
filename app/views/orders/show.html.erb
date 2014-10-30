@@ -1,4 +1,4 @@
-<h1>Order Successfully Placed</h1>
+<!-- <h1>Order Successfully Placed</h1> -->
 
 <h2>Details are as follows</h2>
 
@@ -11,6 +11,17 @@
     Country: <%= @order.country %></br>
     Phone: <%= @order.phone %></br>
 </div>
+
+<form action="" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_YzXqiKdBh2eMc2oTFPltAJZR"
+    data-amount="<%#= @cart.total_price %>"
+    data-name="Sydney Sister"
+    data-description="<%#= @cart.total_price %>"
+    data-image="https://scontent-b-nrt.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/10451798_724918590907954_6574945377185610027_n.png?oh=72a01285b92829f700e7f7f9e228332e&oe=54ECA5ED">
+  </script>
+</form>
 
 
  
