@@ -15,7 +15,7 @@
 }
 
 .instagram-slider {
-	background-color: pink;
+	background-color: rgb(255, 199, 246);
 	display: inline-block;
 	width: 70%;
 }
@@ -23,9 +23,9 @@
 .instagram-text{
 	display: inline-block;
 	float: left;
-	background-color: pink;
+	background-color: rgb(255, 199, 246);
 	height: 220px;
-	font-style: raleway
+	font-style: raleway;
 }
 
 .instagram-row {
@@ -63,7 +63,7 @@
 }
 
 .small-row h3 a {
-	color: #F5859D;
+	color: rgb(255, 199, 246);
 	border: white dotted 5px;
 	padding: 5px;
 }
