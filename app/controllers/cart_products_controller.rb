@@ -2,7 +2,7 @@ class CartProductsController < ApplicationController
 
 	def create
     # redirect_to new_session_path, flash: { notice: 'You must log in to add products to a cart.' } unless current_user.present?
-
+    cart = current_user.cart
     cart_product = CartProduct.create cart_product_params.merge(cart_id: cart.id)
 
     redirect_to products_url, notice: 'Successfully added product to cart.'
