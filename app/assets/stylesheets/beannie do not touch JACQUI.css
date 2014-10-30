@@ -254,3 +254,7 @@ div.product_box {
 p.product-info {
 	padding-left: 10px;
 }
+
+div.row li a {
+	list-style: none;
+}
