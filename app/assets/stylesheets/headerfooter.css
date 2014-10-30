@@ -39,6 +39,11 @@
   background-color: rgb(255, 199, 246);
 }
 
+.inline-list li a {
+  font-size: 14px;
+}
+
+
 .left ul {
   width: 100%;
 }
@@ -64,7 +69,9 @@ nav {
  width: 100%;
 }
 
-
+h5 {
+  font-size: 12px;
+}
 
 a.header-image {
   display: block;
@@ -73,7 +80,7 @@ a.header-image {
 }
 
 a.header-image img.sydney-sisters-header {
-  padding: 20px;
+  padding-bottom: 20px;
 }
 
 
@@ -144,6 +151,7 @@ nav.top-bar {
 
 .row {
   text-align: center;
+  padding-top: 0px;
 }
 
 .row img {
@@ -185,6 +193,7 @@ footer div {
 	display: inline-block;
 	position: relative;
 	width: 22%;
+
 }
 
 .third-col-footer-links {
