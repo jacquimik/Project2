@@ -1,20 +1,8 @@
 <div class="products-index">
-<<<<<<< HEAD
   <ul>
     <li>
-  		<% @products.each do |product| %>
-      <div class="product_box">
-  			<div class="product-image">
-          <%= image_tag product.image %>
-  	 		</div>
-        <h2>
-          <%= link_to product.name, product_path(product) %>
-        </h2>
-        <p class="product-info">
-          $<%= product.price %></br>
-          <%= product.brand %>
-        </p>
-=======
+
+
 	<h2><%= Category.name %></h2>
     <ul>
       <li>
@@ -39,20 +27,7 @@
             $<%= product.price %></br>
             <%= product.brand %>
           </p>
->>>>>>> e19b7b9b9965076106e9ba434f3cda24a049d72e
 
-
-
-
-<!--           <div>
-          <%#= form_for(CartProduct.new(product_id: product.id)) do |f| %>
-            <%#= f.hidden_field :product_id %>
-            <%#= f.submit 'Add to cart' %>
-          <%# end %>
-        </div> -->
-   			<div class="link">
-   				<%#= link_to product.name %>
-   			</div>
       </div>
       <% end %>
     </li>
