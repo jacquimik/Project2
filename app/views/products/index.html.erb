@@ -1,11 +1,20 @@
 <div class="products-index">
-	<h2>All Products</h2>
+	<h2><%= Category.name %></h2>
     <ul>
       <li>
     		<% @products.each do |product| %>
         <div class="product_box">
     			<div class="product-image">
-            <%= image_tag product.image %>
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="front">
+                  <%= image_tag product.image %>
+                </div>
+                <div class="back">
+                  <%= image_tag product.image1 %>      
+                </div>
+              </div>
+            </div>
     	 		</div>
           <h2>
             <%= link_to product.name, product_path(product) %>
@@ -14,6 +23,9 @@
             $<%= product.price %></br>
             <%= product.brand %>
           </p>
+
+
+
 
 <!--           <div>
             <%#= form_for(CartProduct.new(product_id: product.id)) do |f| %>

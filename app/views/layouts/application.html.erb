@@ -23,8 +23,10 @@
 		  			<li><%= link_to 'Edit profile', edit_user_path(@current_user) %></li>
 		  			<li><%= link_to 'Cart', cart_path(@current_user) %></li>
 		  			<li><%= link_to "Sign out #{@current_user.firstname}", new_session_path, method: :delete, data: { confirm: 'Are you sure?'} %></li>
+		  			<li><img src="http://cdn.flaticon.com/png/256/9240.png"/></li>
 		  		<% if @current_user.admin %>
-		  				<li><%= link_to 'Add product', new_admin_product_path %></li>
+		  				<li><%= link_to 'Add Product', new_admin_product_path %></li>
+		  				<li><%= link_to 'View & Edit Products', admin_products_path %></li> 
 		  			<% end %>
 			  	<% else %>
 			  		<li><%= link_to 'Home', root_path %></li>
@@ -35,6 +37,7 @@
 						<li><%= link_to 'FAQ', faq_path %></li>
 						<li><%= link_to 'Blog', blog_path %></li>
 						<li><%= link_to 'Contact', contact_path %></li>
+						<li> <img src="http://cdn.flaticon.com/png/256/9240.png"/> </li>
 			  	<% end %>
 		  	</ul>
 		  	<a class="header-image" href="<%= root_url %>">

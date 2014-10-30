@@ -6,13 +6,20 @@
 <!-- 		  <li> -->
         <div class="admin-product-box">
           <div class="admin-img">
-            <%= image_tag product.image %>
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+  						<div class="flipper">
+   						 <div class="front">
+     						 <%= image_tag product.image %>
+    						</div>
+    						<div class="back">
+      						<%= image_tag product.image1 %>      
+    						</div>
+  						</div>
+						</div>
           </div>
           <%= link_to product.name, [:admin, product] %>
         </div>
-<!-- 		  </li> -->
 		<% end %>
-<!-- 	</ul> -->
 <% else %>
   <p>There are no products to display.</p>
 <% end %>
@@ -20,3 +27,5 @@
 <br/>
 
 <%= link_to 'Add a product', new_admin_product_path %>
+
+	
