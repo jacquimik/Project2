@@ -10,9 +10,10 @@ end
   'Maxi Dresses',
   'Casual Dresses',
   'Tops',
-  'Dress Shirts',
-  'Casual Shirts',
-  'Long Sleeve',
+  'Party Tops',
+  'Casual Tops',
+  'Long Sleeved',
+  'T-Shirts',
   'Crop Tops',
   'Bottoms',
   'Jeans',
@@ -71,7 +72,7 @@ green_shirt = Product.create!(
   brand: 'Kookai',
   image: 'http://images.asos-media.com/inv/media/1/9/0/2/4032091/greenlilly/image1xl.jpg',
   image1: 'http://images.asos-media.com/inv/media/1/9/0/2/4032091/image2xl.jpg',
-  category_id: Category.where(name: 'Dress Shirts').first.id
+  category_id: Category.where(name: 'Casual Tops').first.id
 )
 
 white_shirt = Product.create!(
