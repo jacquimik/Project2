@@ -18,7 +18,7 @@
 //THIS IS RESPONSIVE NAV BAR //
 $(document).foundation();
 
-$(document).ready(function () {
+//$(document).ready(function () {
   // Waiting for all the assets to load on the page
 
   // var menuIsOpen = false;
@@ -47,4 +47,4 @@ $(document).ready(function () {
     // 
   // });
   
-});
+//});

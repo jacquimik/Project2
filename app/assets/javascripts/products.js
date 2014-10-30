@@ -1,5 +1,5 @@
 $(function() {
-$( "#tabs" ).tabs({
-  event: "mouseover"
-});
+  $( "#tabs" ).tabs({
+    event: "mouseover"
+  });
 });

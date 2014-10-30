@@ -20,12 +20,12 @@
 	width: 70%;
 }
 
-.instagram-text{
+.instagram-text {
 	display: inline-block;
 	float: left;
 	background-color: pink;
 	height: 220px;
-	font-style: raleway
+	font-style: raleway;
 }
 
 .instagram-row {
