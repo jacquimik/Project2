@@ -42,64 +42,58 @@
 		  	</a>
 
 
-				<ul>
-					<% Category.all.each do |category| %>
-		  			<li><%= link_to category.name, products_path(category: category.name) %></li>
-					<% end %>
-				</ul>
-
-
 		  	<nav class="top-bar" data-topbar role="navigation">
 		  		<section class="top-bar-section">
 		  			<ul class="left">
-		  				<li><%= link_to "New In", products_path %></li>
-		  					<li class="has-dropdown"><%= link_to "Dresses", products_path %>
+ 		  				<li><%#= link_to "New In", products_path(category: category.name) %></li>
+		  					<li class="has-dropdown"><%= link_to "Dresses", products_path(category: "Casual Dresses") %>
 									<ul class="dropdown">
-										<li><%= link_to "Party Dresses", products_path %></li>
-										<li><%= link_to "Maxi Dresses", products_path %></li>
-										<li><%= link_to "Casual Dresses", products_path %></li>
+										<li><%= link_to "Party Dresses", products_path(category: "Party Dresses") %></li>
+										<li><%= link_to "Maxi Dresses", products_path(category: "Maxi Dresses") %></li>
+										<li><%= link_to "Casual Dresses", products_path(category: "Casual Dresses") %></li>
 									</ul>
 								</li>
-							<li class="has-dropdown"><%= link_to "Tops", products_path %>
+							<li class="has-dropdown"><%= link_to "Tops", products_path(category: "Tops") %>
 								<ul class="dropdown">
-									<li><%= link_to "Party Tops", products_path %></li>
-									<li><%= link_to "Casual Tops", products_path %></li>
-									<li><%= link_to "T-Shirts", products_path %></li>
-									<li><%= link_to "Long Sleeved", products_path %></li>
-									<li><%= link_to "Crop Tops", products_path %></li>
+									<li><%= link_to "Party Tops", products_path(category: "Party Tops") %></li>
+									<li><%= link_to "Casual Tops", products_path(category: "Casual Tops") %></li>
+									<li><%= link_to "T-Shirts", products_path(category: "T-Shirts") %></li>
+									<li><%= link_to "Long Sleeved", products_path(category: "Long Sleeved") %></li>
+									<li><%= link_to "Crop Tops", products_path(category: "Crop Tops") %></li>
 								</ul>
 							</li>
-							<li class="has-dropdown"><%= link_to "Bottoms", products_path %>
+							<li class="has-dropdown"><%= link_to "Bottoms", products_path(category: "Bottoms") %>
 								<ul class="dropdown">
-									<li><%= link_to "Jeans", products_path() %></li>
-									<li><%= link_to "Shorts", products_path %></li>
-									<li><%= link_to "Skirts", products_path %></li>
-									<li><%= link_to "Pants", products_path %></li>
+									<li><%= link_to "Jeans", products_path(category: "Jeans") %></li>
+									<li><%= link_to "Shorts", products_path(category: "Shorts") %></li>
+									<li><%= link_to "Skirts", products_path(category: "Skirts") %></li>
+									<li><%= link_to "Pants", products_path(category: "Pants") %></li>
 								</ul>
 							</li>
-							<li><%= link_to "Playsuits", products_path %></li>
-							<li class="has-dropdown"><%= link_to "Accessories", products_path %>
+							<li><%= link_to "Playsuits", products_path(category: "Playsuits") %></li>
+							<li class="has-dropdown"><%= link_to "Accessories", products_path(category: "Accessories") %>
 								<ul class="dropdown">
-									<li><%= link_to "Bags", products_path %></li>
-									<li><%= link_to "Jewellery", products_path %></li>
-									<li><%= link_to "Shoes", products_path %></li>
+									<li><%= link_to "Bags", products_path(category: "Bags") %></li>
+									<li><%= link_to "Jewellery", products_path(category: "Jewellery") %></li>
+									<li><%= link_to "Shoes", products_path(category: "Shoes") %></li>
 								</ul>
 							</li>
-							<li class="has-dropdown"><%= link_to "Outerwear", products_path %>
+							<li class="has-dropdown"><%= link_to "Outerwear", products_path(category: "Outerwear") %>
 								<ul class="dropdown">
-									<li><%= link_to "Jackets", products_path %></li>
-									<li><%= link_to "Coats", products_path %></li>
-									<li><%= link_to "Kimonos", products_path %></li>
-									<li><%= link_to "Knitwear", products_path %></li>
+									<li><%= link_to "Jackets", products_path(category: "Outerwear") %></li>
+									<li><%= link_to "Coats", products_path(category: "Coats") %></li>
+									<li><%= link_to "Kimonos", products_path(category: "Kimonos") %></li>
+									<li><%= link_to "Knitwear", products_path(category: "Knitwear") %></li>
 								</ul>
 							</li>
-							<li><%= link_to "Sale", products_path %></li>
+							<li><%= link_to "Sale", products_path(category: "Sale") %></li>
 						</ul>
 					</section>
 				</nav>
 		  </header>
 
 <div class="clear"></div>
+
 
 
 
