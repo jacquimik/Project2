@@ -3,6 +3,7 @@
     <ul>
       <li>
     		<% @products.each do |product| %>
+        <div class="product_box">
     			<div class="product-image">
             <%= image_tag product.image %>
     	 		</div>
@@ -23,6 +24,7 @@
      			<div class="link">
      				<%#= link_to product.name %>
      			</div>
+        </div>
         <% end %>
       </li>
     </ul>

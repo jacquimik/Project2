@@ -1,16 +1,18 @@
 <h2>Products</h2>
 
 <% if @products.present? %>
-	<ul>
+<!-- 	<ul> -->
 		<% @products.each do |product| %>
-		  <li>
-		    <%= link_to product.name, [:admin, product] %>
-        <div class="admin-img">
-          <%= image_tag product.image %>
+<!-- 		  <li> -->
+        <div class="admin-product-box">
+          <div class="admin-img">
+            <%= image_tag product.image %>
+          </div>
+          <%= link_to product.name, [:admin, product] %>
         </div>
-		  </li>
+<!-- 		  </li> -->
 		<% end %>
-	</ul>
+<!-- 	</ul> -->
 <% else %>
   <p>There are no products to display.</p>
 <% end %>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Your order is being processed, <%= @user.firstname %></h1>
+    <p>
+  <table id="cart">
+    <tr>
+      <th>Product</th>
+      <th>Product Name</th>
+      <th class="price">Price</th>
+    </tr>
+
+    <% @cart.cart_products.each do |cart_product| %>
+      <% product = cart_product.product %>
+      <tr class="product">
+        <td><%= image_tag(product.image) %></td>
+        <td><%= product.name %></td>
+        <!-- <td class="qty"><%#= product.quantity %></td> -->
+        <td class="price">$<%= product.price %></td>
+      </tr>
+     <% end %>
+
+    <tr>
+      <td class="total-price" colspan="3">
+        Total: $<%= @cart.total_price %>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="checkout-link"><%= link_to 'Checkout', new_order_path %></td>
+    </tr>
+  </table>
+  </p>
+
+    <p>
+      To check out more of the latest trends, visit <%= @url %>.
+    </p>
+  </body>
+</html>
