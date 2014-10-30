@@ -10,32 +10,32 @@
   /*.top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) needs a background change*/
 
 .top-bar {
-  background-color: rgb(255, 199, 246);
+  background-color: #EBBDFB;
 }
 
 .top-bar-section ul li {
-  background-color: rgb(255, 199, 246);
+  background-color: #EBBDFB;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
-  background-color: rgb(255, 199, 246);
+  background-color: #EBBDFB;
 }
 
 
 .top-bar-section ul li:hover:not(.has-form) > a {
-  background-color: rgb(255, 199, 246);
+  background-color: #EBBDFB;
 }
 
 .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
-  background-color: rgb(255, 199, 246);
+  background-color: #EBBDFB;
 }
 
 .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
-  background-color: rgb(255, 199, 246);
+  background-color: #EBBDFB;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
-  background-color: rgb(255, 199, 246);
+  background-color: #EBBDFB;
 }
 
 .inline-list li a {
@@ -47,6 +47,11 @@
 
 }
 
+
+/*.header-img {
+  width: 700px;
+  height: 150px;
+}*/
 
 .left ul {
   width: 100%;
@@ -66,7 +71,7 @@
 }
 
 .top-bar-section li:not(.has-form) a:not(.button):hover {
-  background-color: rgb(255, 199, 246);
+  background-color: #EBBDFB;
 }
 
 nav {
@@ -88,6 +93,10 @@ a.header-image img.sydney-sisters-header {
   padding-bottom: 20px;
 }
 
+.social-media img {
+  width: 36px;
+}
+
 .left {
   width: 100%;
 }
@@ -99,7 +108,9 @@ a.header-image img.sydney-sisters-header {
 .top-bar-section ul li > a {
   font-size: 15px;
 }
-
+.row {
+  max-width: 100%;
+}
 
 .top-bar {
     width: 100%;
@@ -148,6 +159,10 @@ nav.top-bar {
   color: #98D4DC;
 }
  
+.cart.inline-list > li > * {
+  display: inline-block;
+}
+
 
 
 /* FOOTER */
@@ -158,7 +173,7 @@ nav.top-bar {
 }
 
 .row img {
-  width: 36px;
+  
 }
 
 footer {
@@ -166,6 +181,10 @@ footer {
   height:300px;  
   background: #DCDCDC;
   font-family: raleway;
+}
+
+footer .row a:hover {
+
 }
 
 .big-footer {
@@ -217,4 +236,21 @@ footer .row a {
 	display: inline-block;
 	position: relative;
 	width: 14%;
+}
+
+.fb-like-box {
+  width: 100%;
+}
+
+.fb-like-box * {
+  max-width: 100%;
+}
+
+.fb-like-box span, .fb-like-box iframe, .fb-like-box html {
+  width: 100%;
+}  
+
+
+.column small-12.medium-6.large-2 {
+  text-align: left;
 }
