@@ -12,7 +12,15 @@
   <body class="sydney-sisters">
   	<div class="container">
 
+<!-- 
+<div class="row">
+  <div class="small-6 large-5 columns">...</div>
+  <div class="small-6 large-7 columns">...</div>
+</div> -->
+
 		 	<header>
+		 		<div class="row">
+		 		<div class="small-6 large-10 columns">
 		 		<ul class="inline-list">
 			  	<% if @current_user.present? %>
 		  			<li><%= link_to 'Home', root_path %></li>
@@ -23,7 +31,14 @@
 		  			<li><%= link_to 'Edit profile', edit_user_path(@current_user) %></li>
 		  			<li><%= link_to 'Cart', cart_path(@current_user) %></li>
 		  			<li><%= link_to "Sign out #{@current_user.firstname}", new_session_path, method: :delete, data: { confirm: 'Are you sure?'} %></li>
-		  			<li><img src="http://cdn.flaticon.com/png/256/9240.png"/></li>
+
+		  	<div class="small-6 large-2 columns">
+		  		<ul class="inline-list">
+		  			<li><a href="cart_path"><img src="http://icons-watermarks.s3.amazonaws.com/flat-circle-white-on-black/foundation/foundation_shopping-cart/foundation_shopping-cart_flat-circle-white-on-black_512x512.png"/>Cart</li>
+		  			<li> <img src="http://icons-watermarks.s3.amazonaws.com/flat-circle-white-on-black/foundation/foundation_price-tag/foundation_price-tag_flat-circle-white-on-black_512x512.png"/>Checkout</li>
+		  		</ul>
+		  	</div>
+		  			
 		  		<% if @current_user.admin %>
 		  				<li><%= link_to 'Add Product', new_admin_product_path %></li>
 		  				<li><%= link_to 'View & Edit Products', admin_products_path %></li> 
@@ -37,13 +52,18 @@
 						<li><%= link_to 'FAQ', faq_path %></li>
 						<li><%= link_to 'Blog', blog_path %></li>
 						<li><%= link_to 'Contact', contact_path %></li>
-						<li> <img src="http://cdn.flaticon.com/png/256/9240.png"/> </li>
 			  	<% end %>
 		  	</ul>
-		  	<a class="header-image" href="<%= root_url %>">
+		  </div>
+		  	
+
+
+
+				</div>
+
+				<a class="header-image" href="<%= root_url %>">
 		  		<img id="header-img" class="sydney-sisters-header" src="http://i.imgur.com/yUpKyKn.png" />
 		  	</a>
-
 
 		  	<nav class="top-bar" data-topbar role="navigation">
 		  		<section class="top-bar-section">
