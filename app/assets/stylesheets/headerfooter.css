@@ -124,6 +124,10 @@ nav.top-bar {
   clear: both;
 }
 
+.inline-list img {
+  width: 40px;
+}
+
 /*.second-nav-bar nav ul {
   list-style-type: none;
   height: 80px;

@@ -5,7 +5,6 @@ class ProductsController < ApplicationController
 
 		@products = if params[:category].present?
 			category = Category.where(name: params[:category]).first
-
  			Product.where(category_id: category.id)
 		else
  			Product.all
