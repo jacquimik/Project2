@@ -25,20 +25,23 @@
 			  	<% if @current_user.present? %>
 		  			<li><%= link_to 'Home', root_path %></li>
 		  			<li><%= link_to 'Shop', products_path %></li>
-		  			<li><%= link_to 'FAQ', faq_path %></li>
-		  			<li><%= link_to 'Blog', blog_path %></li>
-		  			<li><%= link_to 'Contact', contact_path %></li>
+		  			<li><%= link_to 'FAQ', faq_path %></li><li>
+		  			<a href="http://www.sydneysister.com">Blog</li><li><%= link_to 'Contact', contact_path %></li>
 		  			<li><%= link_to 'Edit profile', edit_user_path(@current_user) %></li>
 		  			<li><%= link_to 'Cart', cart_path(@current_user) %></li>
 		  			<li><%= link_to "Sign out #{@current_user.firstname}", new_session_path, method: :delete, data: { confirm: 'Are you sure?'} %></li>
+		  		</ul>
+		  	</div>
+
 
 		  	<div class="small-6 large-2 columns">
 		  		<ul class="inline-list">
-		  			<li><a href="cart_path"><img src="http://icons-watermarks.s3.amazonaws.com/flat-circle-white-on-black/foundation/foundation_shopping-cart/foundation_shopping-cart_flat-circle-white-on-black_512x512.png"/>Cart</li>
-		  			<li> <img src="http://icons-watermarks.s3.amazonaws.com/flat-circle-white-on-black/foundation/foundation_price-tag/foundation_price-tag_flat-circle-white-on-black_512x512.png"/>Checkout</li>
+		  			<li><img src="http://icons-watermarks.s3.amazonaws.com/flat-circle-white-on-black/foundation/foundation_shopping-cart/foundation_shopping-cart_flat-circle-white-on-black_512x512.png"><%= link_to "Cart", cart_path %></li>
+		  			<li><img src="http://icons-watermarks.s3.amazonaws.com/flat-circle-white-on-black/foundation/foundation_price-tag/foundation_price-tag_flat-circle-white-on-black_512x512.png"/><%= link_to "Checkout", new_order_path %></li>
 		  		</ul>
 		  	</div>
-		  			
+			
+
 		  		<% if @current_user.admin %>
 		  				<li><%= link_to 'Add Product', new_admin_product_path %></li>
 		  				<li><%= link_to 'View & Edit Products', admin_products_path %></li> 
@@ -50,16 +53,13 @@
 						<li><%= link_to 'Shop', products_path %></li>
 						<li><%= link_to 'About', about_path %></li>
 						<li><%= link_to 'FAQ', faq_path %></li>
-						<li><%= link_to 'Blog', blog_path %></li>
-						<li><%= link_to 'Contact', contact_path %></li>
+						<li><a href="http://www.sydneysister.com">Blog</li><li><%= link_to 'Contact', contact_path %></li>
 			  	<% end %>
 		  	</ul>
 		  </div>
+
 		  	
 
-
-
-				</div>
 
 				<a class="header-image" href="<%= root_url %>">
 		  		<img id="header-img" class="sydney-sisters-header" src="http://i.imgur.com/yUpKyKn.png" />
@@ -159,8 +159,7 @@
 		<div class="column small-12 medium-6 large-3">
 			<h3>About</h3>
 				<li><%= link_to "About us", about_path %></li>
-				<li><%= link_to "Blog", blog_path %></li>
-				<li><%= link_to "Competitions", competitions_path %></li>
+				<li><a href="http://www.sydneysister.com">Blog</li><li><%= link_to "Competitions", competitions_path %></li>
 		</div>
 		<div class="column small-12 medium-6 large-3">
 			<div class="fb-like-box" data-href="https://www.facebook.com/sydneysister" data-width="350px" data-colorscheme

@@ -20,6 +20,12 @@
 	width: 70%;
 }
 
+.insta {
+    background-color: lightblue;
+    height: 40px;
+    width: 100%;
+}
+
 .instagram-text {
 	display: inline-block;
 	float: left;
@@ -46,12 +52,43 @@
 	width: 100%;
 }
 
+img.sydneysis {
+    height: 220px;
+    width: 220px;
+}
+
+.instagram-text h2 {
+    font-size: 20px;
+}
+
+.inline-list li a {
+    color: #BA96C2;
+}
+
+.inline-list li a:hover {
+    color: #FFC7F6;
+}
+
+.insta-image img {
+    width: 100px;
+    text-align: center;
+}
+
+.insta-image {
+    text-align: center;
+}
+
+.instagram-text {
+    padding-top: 14px;
+    text-align: center;
+}
+
 .row h1 {
 	font-size: 20px;
 }
 
 .row h2 {
-	font-size: 16px;
+	font-size: 24px;
 }
 
 .small-row {
@@ -63,9 +100,10 @@
 }
 
 .small-row h3 a {
-	color: rgb(255, 199, 246);
-	border: white dotted 5px;
+	color: rgb(185, 150, 193);
+	border: white solid 3px;
 	padding: 5px;
+    border-radius: 5px;
 }
 
 
