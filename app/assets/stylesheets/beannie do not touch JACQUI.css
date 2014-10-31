@@ -58,6 +58,8 @@ div.showproducts, div#tabs {
 
 div.product_name {
 	font-size: 40px;
+	border-bottom: 1px black solid;
+	padding-bottom: 10px;
 }
 
 .product-image img {
@@ -65,6 +67,7 @@ div.product_name {
 	height: auto;
 	padding-left: 10px; 
 	padding-right: 10px;
+	padding-bottom: 24px;
 }
 
 
@@ -271,5 +274,9 @@ div.small-6.large-3.columns {
 div.row li {
 	list-style: none;
 	text-align: left;
-	display: inline;
+/*	display: inline;*/
+}
+
+select.size-select {
+	margin-top: 24px;
 }
