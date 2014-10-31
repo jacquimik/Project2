@@ -260,8 +260,16 @@ div.column.small-12.medium-6.large-2 {
   text-align: left;
 }
 
-/*div.row li {
+ul.inline-list.cart li img {
+	width: 30px;
+}
+
+div.small-6.large-3.columns {
+	padding-top: 5px;
+}
+
+div.row li {
 	list-style: none;
 	text-align: left;
 	display: inline;
-}*/
+}
