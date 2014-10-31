@@ -26,11 +26,14 @@
     height: 458px;
     overflow: hidden;
     padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .orbit-container img {
     width: 100%;
     height: 400px;
+    overflow: hidden;
 }
 
 .orbit-container .orbit-slides-container > * .orbit-caption {
