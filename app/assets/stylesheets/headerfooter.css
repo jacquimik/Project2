@@ -1,14 +1,3 @@
-/*TO MAKE THEM EQUAL WIDTH*/
-  /*ul.left a width of 100%*/
-    /*all lis within that a width of 12.5%*/
-
-/*FOR STYLING STUFF*/
-  /*.top-bar needs to have a background change*/
-  /*.top-bar-section ul li needs a background change*/
-  /*.top-bar-section ul li:hover:not(.has-form) > a   needs a background change*/
-  /*.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button)   needs a background change*/
-  /*.top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) needs a background change*/
-
 .top-bar {
   background-color: #EBBDFB;
 }
@@ -31,7 +20,7 @@
 }
 
 .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
-  background-color: #EBBDFB;
+  background-color: #EFDEFE;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
@@ -47,11 +36,6 @@
 
 }
 
-
-/*.header-img {
-  width: 700px;
-  height: 150px;
-}*/
 
 .left ul {
   width: 100%;
@@ -71,7 +55,7 @@
 }
 
 .top-bar-section li:not(.has-form) a:not(.button):hover {
-  background-color: #EBBDFB;
+  background-color: #EFDEFE;
 }
 
 nav {
