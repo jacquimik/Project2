@@ -11,27 +11,24 @@
 
   <body class="sydney-sisters">
   	<div class="container">
-
 		 	<header>
-
-
-			<div class="sticky-header">
-				<img src="http://i.imgur.com/31wPGV3.png">
-					Free Shipping Australia Wide!
-				<img src="http://i.imgur.com/31wPGV3.png">
-			</div>
+				<div class="sticky-header">
+					<img src="http://i.imgur.com/31wPGV3.png">
+						Free Shipping Australia Wide!
+					<img src="http://i.imgur.com/31wPGV3.png">
+				</div>
 
 
 		 		<div class="row">
 		 		<div class="small-6 large-9 columns">
-		 		<ul class="inline-list">
-			  	<% if @current_user.present? %>
-		  			<li><%= link_to 'Home', root_path %></li>
-		  			<li><%= link_to 'Shop', products_path %></li>
-		  			<li><%= link_to 'FAQ', faq_path %></li><li>
-		  			<a href="http://www.sydneysister.com">Blog</li><li><%= link_to 'Contact', contact_path %></li>
-		  			<li><%= link_to 'Edit profile', edit_user_path(@current_user) %></li>
-		  			<li><%= link_to "Sign out #{@current_user.firstname}", new_session_path, method: :delete, data: { confirm: 'Are you sure?'} %></li>
+		 			<ul class="inline-list">
+				  	<% if @current_user.present? %>
+			  			<li><%= link_to 'Home', root_path %></li>
+			  			<li><%= link_to 'Shop', products_path %></li>
+			  			<li><%= link_to 'FAQ', faq_path %></li><li>
+			  			<a href="http://www.sydneysister.com">Blog</li><li><%= link_to 'Contact', contact_path %></li>
+			  			<li><%= link_to 'Edit profile', edit_user_path(@current_user) %></li>
+			  			<li><%= link_to "Sign out #{@current_user.firstname}", new_session_path, method: :delete, data: { confirm: 'Are you sure?'} %></li>
 		  		</ul>
 		  	</div>
 
@@ -44,31 +41,24 @@
 		  	</div>
 		  </div>
 
-					<div class="admin-links">
-		  		<% if @current_user.admin %>
-		  				<li><%= link_to 'Add Product', new_admin_product_path %></li>
-		  				<li><%= link_to 'Edit Products    ', admin_products_path %></li> 
-		  			<% end %>
-		  		</div>
-			  	<% else %>
-			  		<li><%= link_to 'Home', root_path %></li>
-						<li><%= link_to 'Sign up', new_user_path %></li>
-						<li><%= link_to 'Login', new_session_path %></li>
-						<li><%= link_to 'Shop', products_path %></li>
-						<li><%= link_to 'About', about_path %></li>
-						<li><%= link_to 'FAQ', faq_path %></li>
-						<li><a href="http://www.sydneysister.com">Blog</li><li><%= link_to 'Contact', contact_path %></li>
-					</ul>
+			<div class="admin-links">
+	  		<% if @current_user.admin %>
+	  				<li><%= link_to 'Add Product', new_admin_product_path %></li>
+	  				<li><%= link_to 'Edit Products    ', admin_products_path %></li> 
+	  			<% end %>
+	  		</div>
+		  	<% else %>
+		  		<li><%= link_to 'Home', root_path %></li>
+					<li><%= link_to 'Sign up', new_user_path %></li>
+					<li><%= link_to 'Login', new_session_path %></li>
+					<li><%= link_to 'Shop', products_path %></li>
+					<li><%= link_to 'About', about_path %></li>
+					<li><%= link_to 'FAQ', faq_path %></li>
+					<li><a href="http://www.sydneysister.com">Blog</li><li><%= link_to 'Contact', contact_path %></li>
+				</ul>
 				</div>
-
-			</div>
-
-
-			  	<% end %>
-		  	
-
-		  	
-
+				</div>
+			 <% end %>
 
 				<a class="header-image" href="<%= root_url %>">
 		  		<img class="sydney-sisters-header" src="http://i.imgur.com/yUpKyKn.png" />
@@ -124,11 +114,7 @@
 				</nav>
 		  </header>
 
-<div class="clear"></div>
-
-
-
-
+	<div class="clear"></div>
 
 
 <%= yield %> 
@@ -147,39 +133,38 @@
 
 </script>
 
-<footer>
-	<div class="row">
-		<div class="social-media column small-12 medium-6 large-3">
-			<h3>Stay Connected</h3>
-				<a href="https://twitter.com/sydney_sister"><img src="http://i.imgur.com/uTsRGMO.png"/></a>
-				<a href="http://www.facebook.com/sydneysister"><img src="http://i.imgur.com/zbv7QNb.png"/></a>
-				<a href="http://sydneysister.tumblr.com"><img src="http://i.imgur.com/YQXooXp.png"/></a>
-				<a href="http://pinterest.com/sydneysister"><img src="http://i.imgur.com/DWhK1TO.png"/></a>
-				<a href="http://instagram.com/sydney_sister"><img src="http://i.imgur.com/RYBC1lz.png"/></a>
+	<footer>
+		<div class="row">
+			<div class="social-media column small-12 medium-6 large-3">
+				<h3>Stay Connected</h3>
+					<a href="https://twitter.com/sydney_sister"><img src="http://i.imgur.com/uTsRGMO.png"/></a>
+					<a href="http://www.facebook.com/sydneysister"><img src="http://i.imgur.com/zbv7QNb.png"/></a>
+					<a href="http://sydneysister.tumblr.com"><img src="http://i.imgur.com/YQXooXp.png"/></a>
+					<a href="http://pinterest.com/sydneysister"><img src="http://i.imgur.com/DWhK1TO.png"/></a>
+					<a href="http://instagram.com/sydney_sister"><img src="http://i.imgur.com/RYBC1lz.png"/></a>
+			</div>
+			<div class="column small-12 medium-6 large-2">
+				<h3>Customer Care</h3>
+					<li><%= link_to "Contact Us", contact_path %></li>
+					<li><%= link_to "Shipping", shipping_path %></li>
+					<li><%= link_to "Sizing Information", sizing_path %></li>
+					<li><%= link_to "Returns/Exchanges", returns_path %></li>
+					<li><%= link_to "Payments", paymentinfo_path %></li>
+			</div>
+			<div class="column small-12 medium-6 large-2">
+				<h3>About</h3>
+					<li><%= link_to "About us", about_path %></li>
+					<li><a href="http://www.sydneysister.com">Blog</li><li><%= link_to "Competitions", competitions_path %></li>
+			</div>
+			<div class="column small-12 medium-6 large-4">
+				<div class="fb-like-box" data-href="https://www.facebook.com/sydneysister" data-width="350px" data-colorscheme
+				="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false">
+			</div>
+			<div class="clear"></div>
 		</div>
-		<div class="column small-12 medium-6 large-2">
-			<h3>Customer Care</h3>
-				<li><%= link_to "Contact Us", contact_path %></li>
-				<li><%= link_to "Shipping", shipping_path %></li>
-				<li><%= link_to "Sizing Information", sizing_path %></li>
-				<li><%= link_to "Returns/Exchanges", returns_path %></li>
-				<li><%= link_to "Payments", paymentinfo_path %></li>
-		</div>
-		<div class="column small-12 medium-6 large-2">
-			<h3>About</h3>
-				<li><%= link_to "About us", about_path %></li>
-				<li><a href="http://www.sydneysister.com">Blog</li><li><%= link_to "Competitions", competitions_path %></li>
-		</div>
-		<div class="column small-12 medium-6 large-4">
-			<div class="fb-like-box" data-href="https://www.facebook.com/sydneysister" data-width="350px" data-colorscheme
-			="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false">
-		</div>
-		<div class="clear"></div>
+	</footer>
 	</div>
-</footer>
-
-
-	  </div>
+	
 <%= javascript_include_tag 'application' %>
 <!-- DO NOT DELETE THIS JACQUI YA FEG -->
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">

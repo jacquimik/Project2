@@ -10,7 +10,6 @@
     <tr class="product">
       <td><%= image_tag(product.image) %></td>
       <td><%= product.name %></td>
-      <!-- <td class="qty"><%#= product.quantity %></td> -->
       <td class="price">$<%= product.price %></td>
       <td><%= link_to 'Remove from cart', cart_product_path(cart_product), method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
