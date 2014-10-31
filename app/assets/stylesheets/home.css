@@ -55,7 +55,15 @@
 	background-color: #EBBDFB;
 	height: 220px;
 	font-style: raleway;
+    padding-left: 20px;
 }
+
+.instagram-text.column.small-12.medium-6.large-3 {
+    text-align: center;
+    border-left: 12px solid white;
+    border-bottom: 8px solid white;
+}
+
 
 .instagram-row {
 	position: relative;
