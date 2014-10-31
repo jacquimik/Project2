@@ -255,6 +255,21 @@ p.product-info {
 	padding-left: 10px;
 }
 
-div.row li a {
+div.column.small-12.medium-6.large-2 {
 	list-style: none;
+  text-align: left;
+}
+
+ul.inline-list.cart li img {
+	width: 30px;
+}
+
+div.small-6.large-3.columns {
+	padding-top: 5px;
+}
+
+div.row li {
+	list-style: none;
+	text-align: left;
+	display: inline;
 }
