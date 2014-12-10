@@ -1,7 +1,10 @@
 Sydney Sister
 =========
 
-This is Project 2 for WDI6.
+Project 2 WDI6
+
+This is an e-commerce web app for women's fashion.
+
 
 Gems
 --------------
