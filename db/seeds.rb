@@ -61,7 +61,7 @@ denim_jacket = Product.create!(
 	brand: 'Bordot', 
 	image: 'http://images.asos-media.com/inv/media/7/9/3/6/3296397/black/image1xl.jpg',
   image1: 'http://images.asos-media.com/inv/media/7/9/3/6/3296397/image2xl.jpg',
-  category_id: Category.where(name: 'Tops').first.id
+  category_id: Category.where(name: 'Jackets').first.id
 )
 
 denim_jacket = Product.create!(
@@ -1104,6 +1104,383 @@ pattern_pant = Product.create!(
   image1: 'http://images.asos-media.com/inv/media/4/5/3/7/4387354/image2xl.jpg',
   category_id: Category.where(name: 'Bottoms').first.id
 )
+
+bag = Product.create!(
+  name: 'Bubble Print Shopper Bag',
+  price: '14.99',
+  size: '8',
+  description: 'Printed cotton, Contrast grab handles, Open top, Wipe clean, 100% Cotton',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/0/8/7/7/4537780/mono/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/0/8/7/7/4537780/image3xl.jpg',
+  category_id: Category.where(name: 'Bags').first.id
+)
+
+bag = Product.create!(
+  name: 'Bubble Print Shopper Bag',
+  price: '14.99',
+  size: '8',
+  description: 'Printed cotton, Contrast grab handles, Open top, Wipe clean, 100% Cotton',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/0/8/7/7/4537780/mono/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/0/8/7/7/4537780/image3xl.jpg',
+  category_id: Category.where(name: 'Accessories').first.id
+)
+
+bag = Product.create!(
+  name: 'Vintage Punchout Satchel Bag',
+  price: '44.99',
+  size: '8',
+  description: 'Smooth leather, Perforated floral punched detail, Grab handles and long strap, Open top, Wipe clean',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/4/9/6/5/4575694/black/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/4/9/6/5/4575694/image3xl.jpg',
+  category_id: Category.where(name: 'Accessories').first.id
+)
+
+bag = Product.create!(
+  name: 'Vintage Punchout Satchel Bag',
+  price: '44.99',
+  size: '8',
+  description: 'Smooth leather, Perforated floral punched detail, Grab handles and long strap, Open top, Wipe clean',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/4/9/6/5/4575694/black/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/4/9/6/5/4575694/image3xl.jpg',
+  category_id: Category.where(name: 'Bags').first.id
+)
+
+bag = Product.create!(
+  name: 'Boston Angels Clutch Bag',
+  price: '29.99',
+  size: '8',
+  description: 'Smooth leather, Perforated floral punched detail, Grab handles and long strap, Open top, Wipe clean',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/2/0/4/0/4450402/multi/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/2/0/4/0/4450402/image3xl.jpg',
+  category_id: Category.where(name: 'Bags').first.id
+)
+
+bag = Product.create!(
+  name: 'Boston Angels Clutch Bag',
+  price: '29.99',
+  size: '8',
+  description: 'Smooth leather, Perforated floral punched detail, Grab handles and long strap, Open top, Wipe clean',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/2/0/4/0/4450402/multi/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/2/0/4/0/4450402/image3xl.jpg',
+  category_id: Category.where(name: 'Accessories').first.id
+)
+
+shoes = Product.create!(
+  name: 'Leather Ankle Boots',
+  price: '289.99',
+  size: '8',
+  description: 'Leather upper, Smooth matte finish, Elastic detailing, Minimal design, Back tab',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/2/3/9/2/4062932/black/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/2/3/9/2/4062932/image4xl.jpg',
+  category_id: Category.where(name: 'Accessories').first.id
+)
+
+shoes = Product.create!(
+  name: 'Leather Ankle Boots',
+  price: '289.99',
+  size: '8',
+  description: 'Leather upper, Smooth matte finish, Elastic detailing, Minimal design, Back tab',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/2/3/9/2/4062932/black/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/2/3/9/2/4062932/image4xl.jpg',
+  category_id: Category.where(name: 'Shoes').first.id
+)
+
+shoes = Product.create!(
+  name: 'Leather Flat Sandals',
+  price: '49.99',
+  size: '8',
+  description: 'Leather upper, Smooth matte finish, Elastic detailing, Minimal design',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/2/3/9/4/4554932/black/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/2/3/9/4/4554932/image3xl.jpg',
+  category_id: Category.where(name: 'Accessories').first.id
+)
+
+shoes = Product.create!(
+  name: 'Leather Flat Sandals',
+  price: '49.99',
+  size: '8',
+  description: 'Leather upper, Smooth matte finish, Elastic detailing, Minimal design',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/2/3/9/4/4554932/black/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/2/3/9/4/4554932/image3xl.jpg',
+  category_id: Category.where(name: 'Shoes').first.id
+)
+
+shoes = Product.create!(
+  name: 'Slip on Plimsoll Trainers',
+  price: '89.99',
+  size: '8',
+  description: 'Leather upper, Smooth matte finish, Elastic detailing, Minimal design',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/4/6/8/7/4617864/black/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/4/6/8/7/4617864/image3xl.jpg',
+  category_id: Category.where(name: 'Accessories').first.id
+)
+
+shoes = Product.create!(
+  name: 'Slip on Plimsoll Trainers',
+  price: '89.99',
+  size: '8',
+  description: 'Leather upper, Smooth matte finish, Elastic detailing, Minimal design',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/4/6/8/7/4617864/black/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/4/6/8/7/4617864/image3xl.jpg',
+  category_id: Category.where(name: 'Shoes').first.id
+)
+
+jewellery = Product.create!(
+  name: 'Circle Ditsy Necklace',
+  price: '17.99',
+  size: '8',
+  description: 'Gold-tone finish, Fine chain, Cut-out textured, circle pendant, Adjustable chain length',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/5/1/1/9/4739115/pale/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/5/1/1/9/4739115/image3xl.jpg',
+  category_id: Category.where(name: 'Accessories').first.id
+)
+
+jewellery = Product.create!(
+  name: 'Circle Ditsy Necklace',
+  price: '17.99',
+  size: '8',
+  description: 'Gold-tone finish, Fine chain, Cut-out textured, circle pendant, Adjustable chain length',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/5/1/1/9/4739115/pale/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/5/1/1/9/4739115/image3xl.jpg',
+  category_id: Category.where(name: 'Jewellery').first.id
+)
+
+jewellery = Product.create!(
+  name: 'Pearl Fine Cuff Bracelet',
+  price: '22.99',
+  size: '8',
+  description: 'Gold-tone finish, Fine chain, Cut-out textured, circle pendant, Adjustable chain length',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/8/0/9/9/4669908/gold/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/8/0/9/9/4669908/image3xl.jpg',
+  category_id: Category.where(name: 'Accessories').first.id
+)
+
+jewellery = Product.create!(
+  name: 'Pearl Fine Cuff Bracelet',
+  price: '22.99',
+  size: '8',
+  description: 'Gold-tone finish, Fine chain, Cut-out textured, pearl feature, Adjustable chain length',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/8/0/9/9/4669908/gold/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/8/0/9/9/4669908/image3xl.jpg',
+  category_id: Category.where(name: 'Jewellery').first.id
+)
+
+jewellery = Product.create!(
+  name: 'Large Face Slim Strap Watch',
+  price: '49.99',
+  size: '8',
+  description: 'Gold-tone finish, Fine chain, Adjustable band length',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/5/6/2/9/4059265/cream/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/5/6/2/9/4059265/image2xl.jpg',
+  category_id: Category.where(name: 'Accessories').first.id
+)
+
+jewellery = Product.create!(
+  name: 'Large Face Slim Strap Watch',
+  price: '49.99',
+  size: '8',
+  description: 'Gold-tone finish, Fine chain, Adjustable band length',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/5/6/2/9/4059265/cream/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/5/6/2/9/4059265/image2xl.jpg',
+  category_id: Category.where(name: 'Jewellery').first.id
+)
+
+knitwear = Product.create!(
+  name: 'Felted Knit Jacket',
+  price: '49.99',
+  size: '8',
+  description: 'Fine knit, Notch lapels, open front, Relaxed fit, Machine wash, 50% Acrylic, 41% Nylon, 7% Alpaca Wool, 2% Elastane',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/4/2/7/1/4461724/image4xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/4/2/7/1/4461724/image2xl.jpg',
+  category_id: Category.where(name: 'Outerwear').first.id
+)
+
+knitwear = Product.create!(
+  name: 'Felted Knit Jacket',
+  price: '49.99',
+  size: '8',
+  description: 'Fine knit, Notch lapels, open front, Relaxed fit, Machine wash, 50% Acrylic, 41% Nylon, 7% Alpaca Wool, 2% Elastane',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/4/2/7/1/4461724/image4xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/4/2/7/1/4461724/image2xl.jpg',
+  category_id: Category.where(name: 'Knitwear').first.id
+)
+
+knitwear = Product.create!(
+  name: 'Felted Knit Jacket',
+  price: '49.99',
+  size: '8',
+  description: 'Fine knit, Notch lapels, open front, Relaxed fit, Machine wash, 50% Acrylic, 41% Nylon, 7% Alpaca Wool, 2% Elastane',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/4/2/7/1/4461724/image4xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/4/2/7/1/4461724/image2xl.jpg',
+  category_id: Category.where(name: 'Coats').first.id
+)
+
+knitwear = Product.create!(
+  name: 'Felted Knit Jacket',
+  price: '49.99',
+  size: '8',
+  description: 'Fine knit, Notch lapels, open front, Relaxed fit, Machine wash, 50% Acrylic, 41% Nylon, 7% Alpaca Wool, 2% Elastane',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/4/2/7/1/4461724/image4xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/4/2/7/1/4461724/image2xl.jpg',
+  category_id: Category.where(name: 'Jackets').first.id
+)
+
+knitwear = Product.create!(
+  name: 'Longline Waterfall Cardigan',
+  price: '79.99',
+  size: '8',
+  description: 'Fine knit, Notch lapels, open front, Relaxed fit, Machine wash, 50% Acrylic, 41% Nylon, 7% Alpaca Wool, 2% Elastane',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/3/6/4/9/4709463/camel/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/3/6/4/9/4709463/image2xl.jpg',
+  category_id: Category.where(name: 'Outerwear').first.id
+)
+
+knitwear = Product.create!(
+  name: 'Longline Waterfall Cardigan',
+  price: '79.99',
+  size: '8',
+  description: 'Fine knit, Notch lapels, open front, Relaxed fit, Machine wash, 50% Acrylic, 41% Nylon, 7% Alpaca Wool, 2% Elastane',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/3/6/4/9/4709463/camel/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/3/6/4/9/4709463/image2xl.jpg',
+  category_id: Category.where(name: 'Knitwear').first.id
+)
+
+knitwear = Product.create!(
+  name: 'Longline Waterfall Cardigan',
+  price: '79.99',
+  size: '8',
+  description: 'Fine knit, Notch lapels, open front, Relaxed fit, Machine wash, 50% Acrylic, 41% Nylon, 7% Alpaca Wool, 2% Elastane',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/3/6/4/9/4709463/camel/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/3/6/4/9/4709463/image2xl.jpg',
+  category_id: Category.where(name: 'Kimonos').first.id
+)
+
+knitwear = Product.create!(
+  name: 'May Fluffy Jumper',
+  price: '59.99',
+  size: '8',
+  description: 'Fine knit, Notch lapels, Relaxed fit, Machine wash, 50% Acrylic, 41% Nylon, 7% Alpaca Wool, 2% Elastane',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/5/0/9/5/4795905/pink/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/5/0/9/5/4795905/image2xl.jpg',
+  category_id: Category.where(name: 'Outerwear').first.id
+)
+
+knitwear = Product.create!(
+  name: 'May Fluffy Jumper',
+  price: '59.99',
+  size: '8',
+  description: 'Fine knit, Notch lapels, Relaxed fit, Machine wash, 50% Acrylic, 41% Nylon, 7% Alpaca Wool, 2% Elastane',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/5/0/9/5/4795905/pink/image1xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/5/0/9/5/4795905/image2xl.jpg',
+  category_id: Category.where(name: 'Knitwear').first.id
+)
+
+kimono = Product.create!(
+  name: 'Kimono with Mixed Floral Print',
+  price: '59.99',
+  size: '8',
+  description: 'Notch lapels, Relaxed fit, Machine wash, 50% Acrylic, 41% Nylon,, 2% Elastane',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/0/2/2/4/4534220/image2xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/0/2/2/4/4534220/multi/image1xl.jpg',
+  category_id: Category.where(name: 'Kimonos').first.id
+)
+
+kimono = Product.create!(
+  name: 'Kimono with Mixed Floral Print',
+  price: '59.99',
+  size: '8',
+  description: 'Notch lapels, Relaxed fit, Machine wash, 50% Acrylic, 41% Nylon,, 2% Elastane',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/0/2/2/4/4534220/image2xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/0/2/2/4/4534220/multi/image1xl.jpg',
+  category_id: Category.where(name: 'Outerwear').first.id
+)
+
+kimono = Product.create!(
+  name: 'Kimono in Lace & Fringing',
+  price: '79.99',
+  size: '8',
+  description: 'Notch lapels, Relaxed fit, Machine wash, 50% Acrylic, 41% Nylon,, 2% Elastane',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/6/7/1/3/4503176/image4xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/6/7/1/3/4503176/image2xl.jpg',
+  category_id: Category.where(name: 'Kimonos').first.id
+)
+
+kimono = Product.create!(
+  name: 'Kimono in Lace & Fringing',
+  price: '79.99',
+  size: '8',
+  description: 'Notch lapels, Relaxed fit, Machine wash, 50% Acrylic, 41% Nylon,, 2% Elastane',
+  brand: 'ASOS',
+  
+  image: 'http://images.asos-media.com/inv/media/6/7/1/3/4503176/image4xl.jpg',
+  image1: 'http://images.asos-media.com/inv/media/6/7/1/3/4503176/image2xl.jpg',
+  category_id: Category.where(name: 'Outerwear').first.id
+)
+
+
+
+
+
 
 #annies_cart = Cart.create :user_id => annie.id
 
