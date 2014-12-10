@@ -1,4 +1,5 @@
 class CartProductsController < ApplicationController
+  before_filter :authorize, only: [:create, :destroy]
 
 	def create
     # redirect_to new_session_path, flash: { notice: 'You must log in to add products to a cart.' } unless current_user.present?

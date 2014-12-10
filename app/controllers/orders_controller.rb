@@ -33,7 +33,21 @@ class OrdersController < ApplicationController
     redirect_to products_path
   end
 
+  def payment
+  	@order = Order.find params[:id]
+
+  	if @order.update_attributes(stripe_params)
+  		redirect_to success_order_path(@order)
+  	else
+  		redirect_to error_order_path(@order)
+  	end
+  end
+
 	private
+
+	def stripe_params
+    params.require(:order).permit(:stripe_key_1, :stripe_key_x)
+	end
 
 	def order_params
     params.require(:order).permit(:streetline1, :streetline2, :suburb, :state, :postcode, :country, :phone)

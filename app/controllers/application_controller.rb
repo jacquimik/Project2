@@ -19,4 +19,12 @@ class ApplicationController < ActionController::Base
   def check_login
     redirect_to signup_path unless @current_user.present?
   end
+
+  def authorize
+    redirect_to new_session_path if user_logged_in?
+  end
+
+  def user_logged_in?
+    current_user.nil?
+  end
 end
