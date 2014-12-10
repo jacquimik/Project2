@@ -11,9 +11,13 @@ Rails.application.routes.draw do
   resource :cart, only: [:show, :edit, :update]
   resources :cart_products, only: [:create, :destroy], path: 'cart-products'
 
-  resources :orders
-
-  # resources :orders, only: [:new, :create, :show, :update]
+  resources :orders, only: [:new, :create, :show, :update] do
+    member do
+      patch :payment
+      get :success
+      get :error
+    end
+  end
 
   get '/about' => 'pages#about'
   get '/faq' => 'pages#faq'
