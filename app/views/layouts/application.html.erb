@@ -35,8 +35,8 @@
 		  
 		  	<div class="small-6 large-3 columns">
 		  		<ul class="inline-list cart">
-		  			<li><img src="http://icons-watermarks.s3.amazonaws.com/flat-circle-white-on-black/foundation/foundation_shopping-cart/foundation_shopping-cart_flat-circle-white-on-black_512x512.png"><%= link_to "Cart", cart_path %></li>
-		  			<li><img src="http://icons-watermarks.s3.amazonaws.com/flat-circle-white-on-black/foundation/foundation_price-tag/foundation_price-tag_flat-circle-white-on-black_512x512.png"/><%= link_to "Checkout", new_order_path %></li>
+		  			<li><%= image_tag("cart-icon.png")%><%= link_to "Cart", cart_path %></li>
+		  			<li class="checkout"><%= image_tag("checkout-icon.png")%><%= link_to "Checkout", new_order_path %></li>
 		  		</ul>
 		  	</div>
 		  </div>

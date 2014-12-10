@@ -280,3 +280,8 @@ div.row li {
 select.size-select {
 	margin-top: 24px;
 }
+
+
+ul.inline-list.cart li.checkout {
+	padding-top: 4px;
+}
