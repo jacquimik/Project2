@@ -1,5 +1,5 @@
 $(document).ready(function() {
-        setTimeout(function() {
-            $("#orbit").click();
-        }, 1000);
-    });
+  setTimeout(function() {
+    $("#orbit").click();
+  }, 1000);
+});

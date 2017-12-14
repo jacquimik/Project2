@@ -232,7 +232,6 @@ div.products-index-heading {
 
 div.container div.products-index ul li  {
 	padding-top: 40px;
-	/*text-align: center;*/
 }
 
 div.front {
@@ -274,13 +273,11 @@ div.small-6.large-3.columns {
 div.row li {
 	list-style: none;
 	text-align: left;
-/*	display: inline;*/
 }
 
 select.size-select {
 	margin-top: 24px;
 }
-
 
 ul.inline-list.cart li.checkout {
 	padding-top: 4px;

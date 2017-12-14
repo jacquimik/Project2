@@ -25,7 +25,6 @@ class OrdersController < ApplicationController
 
 	def show
 		@order = Order.find params[:id]
-		# redirect_to products_path
 	end
 
 	def update

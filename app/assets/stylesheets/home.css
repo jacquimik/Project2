@@ -14,30 +14,30 @@
 }
 
 .sticky-header h1 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .sticky-header img {
-    height: 26px;
+  height: 26px;
 }
 
 .orbit-container {
-    width: 100%;
-    height: 508px;
-    overflow: hidden;
-    padding-top: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
+  width: 100%;
+  height: 508px;
+  overflow: hidden;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .orbit-container img {
-    width: 100%;
-    height: 450px;
-    overflow: hidden;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
 }
 
 .orbit-container .orbit-slides-container > * .orbit-caption {
-    display: none;
+  display: none;
 }
 
 .instagram-slider {
@@ -47,9 +47,9 @@
 }
 
 .insta {
-    background-color: lightblue;
-    height: 40px;
-    width: 100%;
+  background-color: lightblue;
+  height: 40px;
+  width: 100%;
 }
 
 .instagram-text {
@@ -58,15 +58,14 @@
 	background-color: #EBBDFB;
 	height: 220px;
 	font-style: raleway;
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .instagram-text.column.small-12.medium-6.large-3 {
-    text-align: center;
-    border-left: 12px solid white;
-    border-bottom: 8px solid white;
+  text-align: center;
+  border-left: 12px solid white;
+  border-bottom: 8px solid white;
 }
-
 
 .instagram-row {
 	position: relative;
@@ -87,34 +86,34 @@
 }
 
 img.sydneysis {
-    height: 220px;
-    width: 220px;
+  height: 220px;
+  width: 220px;
 }
 
 .instagram-text h2 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .inline-list li a {
-    color: #BA96C2;
+  color: #BA96C2;
 }
 
 .inline-list li a:hover {
-    color: #FFC7F6;
+  color: #FFC7F6;
 }
 
 .insta-image img {
-    width: 100px;
-    text-align: center;
+  width: 100px;
+  text-align: center;
 }
 
 .insta-image {
-    text-align: center;
+  text-align: center;
 }
 
 .instagram-text {
-    padding-top: 14px;
-    text-align: center;
+  padding-top: 14px;
+  text-align: center;
 }
 
 .row h1 {
@@ -137,6 +136,5 @@ img.sydneysis {
 	color: white;
 	border: white solid 3px;
 	padding: 5px;
-    border-radius: 5px;
+  border-radius: 5px;
 }
-

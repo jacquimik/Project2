@@ -1,25 +1,23 @@
 <h2>Products</h2>
 
 <% if @products.present? %>
-<!-- 	<ul> -->
-		<% @products.each do |product| %>
-<!-- 		  <li> -->
-        <div class="admin-product-box">
-          <div class="admin-img">
-            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-  						<div class="flipper">
-   						 <div class="front">
-     						 <%= image_tag product.image %>
-    						</div>
-    						<div class="back">
-      						<%= image_tag product.image1 %>      
-    						</div>
-  						</div>
+	<% @products.each do |product| %>
+    <div class="admin-product-box">
+      <div class="admin-img">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+					<div class="flipper">
+						 <div class="front">
+ 						 <%= image_tag product.image %>
 						</div>
-          </div>
-          <%= link_to product.name, [:admin, product] %>
-        </div>
-		<% end %>
+						<div class="back">
+  						<%= image_tag product.image1 %>      
+						</div>
+					</div>
+				</div>
+      </div>
+      <%= link_to product.name, [:admin, product] %>
+    </div>
+	<% end %>
 <% else %>
   <p>There are no products to display.</p>
 <% end %>

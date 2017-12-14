@@ -1,10 +1,7 @@
 class CartsController < ApplicationController
-  # before_action :check_login
-  # before_action :get_cart
   before_action :setup_cart
 
   def show
-
   end
  
   def edit
@@ -22,10 +19,6 @@ class CartsController < ApplicationController
   def cart_params
     params.require(:cart).permit(:product_id)
   end
- 
-  # def get_cart
-  # 	@cart = @current_user.cart
-  # end
 
   def setup_cart
     if @current_user.present?

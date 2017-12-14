@@ -2,7 +2,6 @@ class CartProductsController < ApplicationController
   before_filter :authorize, only: [:create, :destroy]
 
 	def create
-    # redirect_to new_session_path, flash: { notice: 'You must log in to add products to a cart.' } unless current_user.present?
     cart = current_user.cart
     cart_product = CartProduct.create cart_product_params.merge(cart_id: cart.id)
 
@@ -25,16 +24,4 @@ class CartProductsController < ApplicationController
   def cart
     current_user.cart
   end
-
-  # def cart
-  #   if current_user.present?
-  #     current_user.cart
-  #   elsif session[:cart_id].present?
-  #     Cart.find session[:cart_id]
-  #   else
-  #     Cart.create.tap do |cart|
-  #       session[:cart_id] = cart.id
-  #     end
-  #   end
-  # end
 end

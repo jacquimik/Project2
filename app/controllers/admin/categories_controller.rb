@@ -32,7 +32,6 @@ class Admin::CategoriesController < ApplicationController
 			category.update category_params
 			redirect_to [:admin, category]
 		end
-
 		
 		private
 		def check_for_admin

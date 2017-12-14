@@ -2,7 +2,6 @@
   klass.send :destroy_all
 end
 
-
 [ 
   'New In',
   'Dresses',
@@ -1476,13 +1475,3 @@ kimono = Product.create!(
   image1: 'http://images.asos-media.com/inv/media/6/7/1/3/4503176/image2xl.jpg',
   category_id: Category.where(name: 'Outerwear').first.id
 )
-
-
-
-
-
-
-#annies_cart = Cart.create :user_id => annie.id
-
-# annies_cart.products << denim_jacket
-# annies_cart.products << green_shirt

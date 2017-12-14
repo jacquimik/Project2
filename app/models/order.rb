@@ -1,9 +1,5 @@
 class Order < ActiveRecord::Base
 	belongs_to :user
-	# validates :cart_id, presence: true
-
-	# belongs_to :cart
-	# validates :cart, presence: true
 
   has_many :order_products
   has_many :products, :through => :order_products
